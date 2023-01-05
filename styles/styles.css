@@ -1,0 +1,27 @@
+body {
+    font-family: "Gill Sans"
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: blue;
+    border: 2px black solid
+}
+
+header img{
+    margin: 1rem;
+}
+
+header h1{
+    text-align: center;
+
+}
+header div:nth-child(2){
+    width: 100%;
+}
+
+#content {
+    margin: 0 auto;
+
+}
