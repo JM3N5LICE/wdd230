@@ -6,7 +6,8 @@ header {
     display: flex;
     align-items: center;
     background-color: blue;
-    border: 2px black solid
+    color:white;
+    border: 2px black solid;
 }
 
 header img{
@@ -23,5 +24,15 @@ header div:nth-child(2){
 
 #content {
     margin: 0 auto;
+    width: 800px;
 
+}
+
+footer {
+    align-items: center;
+    background-color: blue;
+    color:white;
+    border: 2px black solid;
+    text-align: center;
+    padding: 1rem;
 }
