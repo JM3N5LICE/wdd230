@@ -1,0 +1,8 @@
+@media screen and (min-width: 800px){
+    header, footer{
+        background-color: green;
+        border: 4px black solid;
+        border-radius: 1 rem;
+        text-align: right;
+    }
+}
