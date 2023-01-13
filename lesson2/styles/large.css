@@ -1,0 +1,25 @@
+@media screen and (min-width: 1024px) {
+    body{
+        display: grid;
+        grid-template-areas: "s1 s2 s3"
+                             
+    }
+
+    #section1{
+        grid-area: s1;
+    }
+
+    #section2{
+        grid-area: s2;
+    }
+
+    #section1{
+        grid-area: s3;
+    }
+
+    section{
+        padding: 1rem;
+        border: 2px solid black;
+        margin: 1rem;
+    }
+}
