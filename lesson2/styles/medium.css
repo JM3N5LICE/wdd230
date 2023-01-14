@@ -1,12 +1,12 @@
 @media screen and (min-width: 600px) {
-    body{
+    main{
         display: grid;
         max-width: 1024px;
         margin:auto;
         grid-template-areas: "h h"
                              "s1 s2"
                              "s3 s3"
-                             "f f"
+                             "f f "
                              
     }
 

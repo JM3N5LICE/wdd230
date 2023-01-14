@@ -1,5 +1,5 @@
 @media screen and (min-width: 300px) {
-    body{
+    main{
         display: grid;
         max-width: 1024px;
         margin:auto;
@@ -8,6 +8,7 @@
                              "s2"
                              "s3"
                              "f"
+                             
     }
 
     header{
@@ -29,5 +30,6 @@
     footer{
         grid-area: f;
     }
+
 }
 
