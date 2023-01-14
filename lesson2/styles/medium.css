@@ -1,9 +1,17 @@
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 600px) {
     body{
         display: grid;
-        grid-template-areas: "s1 s2"
+        max-width: 1024px;
+        margin:auto;
+        grid-template-areas: "h h"
+                             "s1 s2"
                              "s3 s3"
+                             "f f"
                              
+    }
+
+    header{
+        grid-area: h;
     }
 
     #section1{
@@ -14,13 +22,12 @@
         grid-area: s2;
     }
 
-    #section1{
+    #section3{
         grid-area: s3;
     }
 
-    section{
-        padding: 1rem;
-        border: 2px solid black;
-        margin: 1rem;
+
+    footer{
+        grid-area: f;
     }
 }
