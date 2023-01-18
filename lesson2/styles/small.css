@@ -1,5 +1,5 @@
 @media screen and (min-width: 300px) {
-    main{
+    body{
         display: grid;
         max-width: 1024px;
         margin:auto;
