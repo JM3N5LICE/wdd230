@@ -109,7 +109,8 @@ nav ul li {
 }
 nav ul li:hover {
   background-color: rgb(9, 97, 41);
-  color: white;
+  border-radius: 50%;
+  
 }
 
 nav a {
