@@ -46,6 +46,10 @@ nav ul li:hover {
   border-radius: 100%;
 }
 
+nav a:hover{
+  color:black;
+}
+
 nav a {
   display: block;
   padding: 0.5rem;
