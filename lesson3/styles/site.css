@@ -44,6 +44,7 @@ nav ul li {
 nav ul li:hover {
   background-color: #fb9f74;
   border-radius: 100%;
+  color: black;
 }
 
 nav a:hover{
@@ -61,9 +62,10 @@ h1{
     text-align: center;
 }
 
+
 .active {
-  background-color: #fb9f74;
-  
+  background-color: #172121;
+  color:black;
 }
 
 p {
