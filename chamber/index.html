@@ -11,25 +11,35 @@
     <link rel="stylesheet" href="./styles/medium.css">
     <link rel="stylesheet" href="./styles/large.css">
     <script src="./scripts/header-footer.js" defer></script>
+    <script src="./scripts/main.js" defer></script>
 </head>
 <body>
     <header>
-        <div class="header-logo">
-            <img src="./images/Lonely-Mountain-200x200.png" alt="logo">
-        </div>
+        <section id="header-logo-title">
+            <div class="header-logo">
+                <img src="./images/Lonely-Mountain-200x200.png" alt="logo">
+            </div>
+            <div class="header-words1"><h1>Lonely Mountain</h1></div>
+            <div class="header-words2"><h2>Chamber of Commerce</h2></div>
+        </section>
+        <section id="social-media">
+            <a href="instagram.com"><img src="./images/instagram-40.png" /></a>
+            <a href="facebook.com"><img src="./images/facebook-40.png" /></a>
+        </section>
         <nav>
-            <ul>
-              <li><a href="index.html">Home</a></li>
+            <button id="hamburger-menu">
+                <span id="menu-closed">&equiv;</span>
+                <span id="menu-open">X</span>
+            </button>
+            <ul id="navbar">
+              <li><a href="index.html" class="active">Home</a></li>
               <li><a href="discover.html">Discover</a></li>
               <li><a href="directory.html">Directory</a></li>
               <li><a href="join.html">Join</a></li>
               <li><a href="contact.html">Contact</a></li>
-              <li>
-                <a href="instagram.com"><img src="./images/instagram-40.png" /></a>
-                <a href="pinterest.com"><img src="./images/pinterest-40.png" /></a>
-              </li>
             </ul>
           </nav>
+          <div class="header-today"><h2></h2></div>
     </header>
     <main class="home-main">
         <div id="event">
@@ -63,6 +73,17 @@
         <div class="footer-logo">
             <img src="./images/Lonely-Mountain-200x200.png" alt="logo">
         </div>
+        <div class="footer-contact">
+            <h3>Lonely Mountain Chamber of Commerce</h3>
+            <p>4647 Durin Street<br>Waikato, New Zealand 2121</p>
+            <p><a href="mailto:notavalidaddress@nowhere.email">info@lmountainchamber.org</a></p>
+            <p>208-865-5436</p>
+          </div>
+          <div>
+            <a href="https://goo.gl/maps/b17zTF1NkiE4FevSA" target="_blank">Location Map</a>
+          </div>
+          <hr />
+          <div><p>&copy; <span id="currentyear"></span> | Justyn Mencl | Rexburg, ID | Last Updated: <span id="lastmodified"></span></p></div>
     </footer>
 </body>
 </html>
