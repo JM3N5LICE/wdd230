@@ -8,7 +8,7 @@
 
     /*main body grid*/
   main{
-    max-width: 800px;
+     max-width: 1600px; 
     display:grid;
     grid-template-areas: "h h h"
                          "n n n"
@@ -59,11 +59,60 @@
     grid-area: s2;
   }
 
-#social-media{
-  margin-left:100px;
-}
+  #social-media{
+    margin-left:100px;
+  }
 
-#hamburger-menu{
-  margin-right:-30px;
-}
-  }  
+  #hamburger-menu{
+    margin-right:-30px;
+  }
+
+  /* footer{
+    display:grid;
+    grid-template-areas:"fl fa fc" 
+                        "fl fa fc"
+                        "ln ln ln"
+                        "pi pi pi";
+  }
+
+  .footer-logo{
+    margin-top: 0.7rem;
+    grid-area:fl;
+  }
+
+  .footer-contact{
+    grid-area:fc;
+  }
+
+  .footer-address{
+    grid-area:fa;
+  }
+
+  .project-info{
+    grid-area:pi;
+  }
+
+  #line{
+    grid-area: ln;
+  } */
+  #footer-flex{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .footer-address{
+    padding:30px;
+  }
+
+  .footer-contact{
+    padding:30px;
+    flex:end;
+  }
+
+  .project-info{
+    /* margin-top:2px; */
+    padding: 2px;
+    
+  }
+ 
+}  

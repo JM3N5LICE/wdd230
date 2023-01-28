@@ -75,8 +75,8 @@
       header{
         align-items: center;
         display: grid;
-        grid-template-areas: "hlg hm sm"
-                             "ht ht ht";
+        grid-template-areas: "hlg hlg hlg hm hm sm"
+                             "ht ht ht ht ht ht";
       }
     
       #header-logo-title{
