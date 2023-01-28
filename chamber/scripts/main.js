@@ -7,3 +7,4 @@ function toggleMenu(){
 // document.querySelector("#hamburger-menu").onclick = toggleMenu;
 
 document.querySelector("#hamburger-menu").addEventListener('click', toggleMenu);
+

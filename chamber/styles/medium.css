@@ -1,24 +1,69 @@
  /* Media Query Updates for middle widths */
   
  @media screen and (min-width: 640px) {
-    nav ul {
-      flex-direction: row;
-    }
-
-    nav ul li {
-      text-align: center;
-    }
-
-    #navbar{
-      display: flex;
-    }
-
-    #hamburger-menu{
-      display: none;
-    }
     
-    #spotlight2 {
+    #join, #spotlight2 {
         display: flex;
     }
-  }  
 
+    /*main body grid*/
+  main{
+    max-width: 800px;
+    display:grid;
+    grid-template-areas: "h h h"
+                         "n n n"
+                         "sp sp sp"
+                         "j j j"
+                         "e e w"
+                         
+                         ;
+  }
+
+  #event {
+    grid-area:e;
+  }
+
+  #weather {
+    grid-area:w;
+  }
+
+  #join {
+    grid-area:j;
+  }
+
+  #news {
+    grid-area:n;
+  }
+
+  #spotlights {
+    grid-area:sp;
+    /* border: 1px solid black; */
+    margin: 0.5rem;
+    background-color: #b1a296;
+  }
+
+  #hero {
+    grid-area:h;
+  }
+
+  #spotlights{
+    display: grid;
+    grid-template-areas:"s1 s2" ;
+  }
+
+  #spotlight1{
+    grid-area: s1;
+  }
+
+  #spotlight2{
+    grid-area: s2;
+  }
+
+#social-media{
+  margin-left:100px;
+}
+
+#hamburger-menu{
+  margin-right:-30px;
+}
+  }  

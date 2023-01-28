@@ -1,5 +1,109 @@
 @media screen and (min-width: 800px) {
+    nav ul {
+        flex-direction: row;
+      }
+  
+      nav ul li {
+        text-align: center;
+      }
+  
+      #navbar{
+        display: flex;
+      }
+  
+      #hamburger-menu{
+        display: none;
+      }
+      
+
     #spotlight3{
         display:flex;
     }
+
+    main{
+        display:grid;
+        padding: 0.5rem;
+        grid-template-areas: "e h h sp"
+                             "w h h sp"
+                             "j n n sp"
+                             
+                             
+                             ;
+      }
+    
+      #event {
+        grid-area:e;
+      }
+    
+      #weather {
+        grid-area:w;
+      }
+    
+      #join {
+        grid-area:j;
+      }
+    
+      #news {
+        grid-area:n;
+      }
+    
+      #spotlights {
+        grid-area:sp;
+        /* border: 1px solid black; */
+        margin: 0.5rem;
+        background-color: #b1a296;
+      }
+    
+      #hero {
+        grid-area:h;
+      }
+
+      #spotlights{
+        display: grid;
+        grid-template-areas:"s1"
+                            "s2" ;
+      }
+    
+      #spotlight1{
+        grid-area: s1;
+      }
+    
+      #spotlight2{
+        grid-area: s2;
+      }
+
+      header{
+        align-items: center;
+        display: grid;
+        grid-template-areas: "hlg hm sm"
+                             "ht ht ht";
+      }
+    
+      #header-logo-title{
+        max-width: 260px;
+        grid-area: hlg;
+      }
+    
+      #social-media{
+        grid-area: sm;
+      }
+    
+      #hamburger-menu{
+        align-items: right;
+        grid-area: hm;
+      }
+    
+      #navbar{
+        grid-area:nb;
+      }
+    
+      .header-today{
+        align-items: center;
+        grid-area: ht;
+        font-size:2vw;
+        background-color: #587d71;
+        margin:3px;
+        max-height: 35px;
+        font-size: max(8px)
+      }
 }
