@@ -31,6 +31,10 @@
                              ;
       }
     
+      
+
+
+
       #event {
         grid-area:e;
       }
@@ -72,13 +76,16 @@
         grid-area: s2;
       }
 
-      header{
+      
+
+      #header-stuff{
         align-items: center;
         display: grid;
-        grid-template-areas: "hlg hlg hlg hm hm sm"
-                             "ht ht ht ht ht ht";
+        grid-template-areas: "hlg sm"
+                             "ht ht ";
       }
-    
+      
+     
       #header-logo-title{
         max-width: 260px;
         grid-area: hlg;

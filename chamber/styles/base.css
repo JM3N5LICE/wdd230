@@ -24,9 +24,7 @@ body {
   nav {
     background-color: #172121;
     max-width: 832px; 
-    /* min-width: 200px; */
     margin: 0 auto;
-    /* border: 1px solid black;   */
   }
   
   nav ul {
@@ -119,7 +117,101 @@ body {
     padding:0.2rem;
     margin:0.5rem;
   }
+  #weather{
+    padding: 20px;
+    text-align:center;
+    
+  }
   
+  
+  #hero{
+    text-align:center;
+    max-width:auto;
+    position:relative;
+  }
+
+  #hero img{
+    max-width:100%;
+    min-height: 100%;
+    object-fit:cover;
+
+  }
+
+  #hero-button{
+    position:absolute;
+  bottom:25px;
+  right:25px;
+  }
+
+  #join{
+    text-align:center;
+    position:relative;
+  }
+
+  #join-button{
+    margin: 0;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  }
+  p {
+    margin:10px;
+    
+  }
+  /* CSS */
+.button-15 {
+  background-image: linear-gradient(#fb9f74, #f07c46);
+  border: 1px solid #f07c46;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  direction: ltr;
+  display: block;
+  font-family: "SF Pro Text","SF Pro Icons","AOS Icons","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: -.022em;
+  line-height: 1.47059;
+  min-width: 30px;
+  overflow: visible;
+  padding: 4px 15px;
+  
+  text-align: center;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.button-15:disabled {
+  cursor: default;
+  opacity: .3;
+}
+
+.button-15:hover {
+  background-image: linear-gradient(#fb9f74, #f07c46);
+  border-color: #f07c46;
+  text-decoration: none;
+}
+
+.button-15:active {
+  background-image: linear-gradient(#fb9f74, #f07c46);
+  border-color: #f07c46;
+  outline: none;
+}
+
+.button-15:focus {
+  box-shadow: rgba(224, 106, 10, 0.5) 0 0 0 3px;
+  outline: none;
+}
+
+  #spotlight{
+    max-width: 100%;
+  }
   /* Hamburger menu stuff */
   
   #hamburger-menu{
@@ -165,7 +257,6 @@ body {
   /*Grid for small view*/
   #header-logo-title{
     display: grid;
-    /* margin:auto; */
     grid-template-areas: "hl hw1";
   
   }
@@ -185,13 +276,24 @@ body {
     max-width: 100%;
   } */
 
-  header{
-    align-items: center;
-    display: grid;
-    grid-template-areas: "hlg sm hm"
-                         "ht ht ht";
+  #meet-greet{
+    display:none;
   }
 
+  #meet-greet.active{
+    display:block;
+    background-color: grey;
+    color: black;
+   
+                         
+  }
+ 
+ #heading-stuff {
+  align-items: center;
+  display: grid;
+  grid-template-areas: "hlg sm"
+                       "ht ht";
+ }
   #header-logo-title{
     max-width: 270px;
     grid-area: hlg;
@@ -200,12 +302,15 @@ body {
   #social-media{
     max-width: 100px;
     grid-area: sm;
+    justify-self:end;
+    padding:20px;
   }
 
   #hamburger-menu{
     align-items: right;
     grid-area: hm;
   }
+
 
   #navbar{
     grid-area:nb;
