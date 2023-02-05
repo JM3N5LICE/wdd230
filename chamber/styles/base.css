@@ -57,22 +57,9 @@ body {
     
   }
   
-  h1{
-      text-align: center;
-      font-size: min(4vw, 16px)
-      
-  }
-  #header-words{
-    max-width: 300px;
-    max-height: 100px;
-    
-  }
   
-  section a img{
-    max-width: 30px;
-    border: 0;
-    margin-right: 0.2rem;
-  }
+  
+  
   /* table{
     border-collapse: collapse;
   }
@@ -82,11 +69,11 @@ body {
     padding: 1rem;
   } */
   
-  #logo-link img{
-    /* border: 1px solid black; */
+  /* #logo-link img{
+    
     max-width: 100px;
     padding:10px;
-  }
+  } */
 
  
   
@@ -102,10 +89,7 @@ body {
     color: white;
   }
   
-  header h1{
-    padding: 1rem;
-    /* max-block-size: 200px; */
-  }
+  
   
   #footer-logo{
     max-width:150px;
@@ -148,6 +132,12 @@ body {
     position:relative;
   }
 
+  
+  p {
+    margin:10px;
+    
+  }
+  /* Buttons CSS */
   #join-button{
     margin: 0;
   position: absolute;
@@ -156,11 +146,7 @@ body {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   }
-  p {
-    margin:10px;
-    
-  }
-  /* CSS */
+
 .button-15 {
   background-image: linear-gradient(#fb9f74, #f07c46);
   border: 1px solid #f07c46;
@@ -254,28 +240,6 @@ body {
   }
  
 
-  /*Grid for small view*/
-  #header-logo-title{
-    display: grid;
-    grid-template-areas: "hl hw1";
-  
-  }
-
-  #header-logo{
-    grid-area: hl
-    
-  }
-
-  #header-words1{
-    
-    grid-area: hw1;
-  }
-
-  /* #header-words2{
-    grid-area: hw2;
-    max-width: 100%;
-  } */
-
   #meet-greet{
     display:none;
   }
@@ -287,23 +251,55 @@ body {
    
                          
   }
+
+  /*Header stuff*/
  
  #heading-stuff {
-  align-items: center;
   display: grid;
-  grid-template-areas: "hlg sm"
-                       "ht ht";
- }
-  #header-logo-title{
-    max-width: 270px;
-    grid-area: hlg;
+  grid-template-areas: "hl hw sm";    
+  
+  width:100%;
+}
+
+#logo-link{
+  grid-area: hl;
+  max-width: 100%;
+  min-width:100px;
+  margin-top:20px;
+}
+
+#header-words{
+  grid-area: hw;
+  
+} 
+
+  header h1{
+    padding: 1rem;
+    font-size: min(4vw, 40px)
   }
 
   #social-media{
     max-width: 100px;
     grid-area: sm;
-    justify-self:end;
     padding:20px;
+  }
+
+   section a img{
+    max-width: 200px;
+    border: 0;
+    margin-right: 0.2rem;
+  } 
+
+  
+
+  .header-today{
+    align-items: center;
+    grid-area: ht;
+    font-size:2vw;
+    background-color: #587d71;
+    margin:3px;
+    max-height: 35px;
+    font-size: max(8px)
   }
 
   #hamburger-menu{
@@ -316,15 +312,7 @@ body {
     grid-area:nb;
   }
 
-  .header-today{
-    align-items: center;
-    grid-area: ht;
-    font-size:2vw;
-    background-color: #587d71;
-    margin:3px;
-    max-height: 35px;
-    font-size: max(8px)
-  }
+  
 
   /*main body grid*/
   main{

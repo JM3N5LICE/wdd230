@@ -76,41 +76,4 @@
         grid-area: s2;
       }
 
-      
-
-      #header-stuff{
-        align-items: center;
-        display: grid;
-        grid-template-areas: "hlg sm"
-                             "ht ht ";
-      }
-      
-     
-      #header-logo-title{
-        max-width: 260px;
-        grid-area: hlg;
-      }
-    
-      #social-media{
-        grid-area: sm;
-      }
-    
-      #hamburger-menu{
-        align-items: right;
-        grid-area: hm;
-      }
-    
-      #navbar{
-        grid-area:nb;
-      }
-    
-      .header-today{
-        align-items: center;
-        grid-area: ht;
-        font-size:2vw;
-        background-color: #587d71;
-        margin:3px;
-        max-height: 35px;
-        font-size: max(8px)
-      }
 }
