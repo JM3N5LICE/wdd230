@@ -17,7 +17,7 @@
       
 
     #spotlight3{
-        display:flex;
+        display:block;
     }
 
     main{
@@ -37,18 +37,22 @@
 
       #event {
         grid-area:e;
+        max-width:300px;
       }
     
       #weather {
         grid-area:w;
+        max-width:300px;
       }
     
       #join {
         grid-area:j;
+        max-width:300px;
       }
     
       #news {
         grid-area:n;
+        
       }
     
       #spotlights {
@@ -56,6 +60,7 @@
         /* border: 1px solid black; */
         margin: 0.5rem;
         background-color: #b1a296;
+        max-width:300px;
       }
     
       #hero {

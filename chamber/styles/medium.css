@@ -3,12 +3,12 @@
  @media screen and (min-width: 640px) {
     
     #join, #spotlight2 {
-        display: flex;
+        display: block;
     }
 
     /*main body grid*/
   main{
-     max-width: 1600px; 
+     max-width: 1400px; 
     display:grid;
     grid-template-areas: "h h h"
                          "n n n"
