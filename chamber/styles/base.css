@@ -136,7 +136,7 @@ body {
   
   #hero{
     text-align:center;
-    max-width:auto;
+    
     position:relative;
   }
 
@@ -331,7 +331,7 @@ body {
   }
 
   #hamburger-menu{
-    align-items: right;
+   
     grid-area: hm;
   }
 
