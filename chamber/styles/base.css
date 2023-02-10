@@ -326,8 +326,8 @@ body {
     font-size:2vw;
     background-color: #587d71;
     margin:3px;
-    max-height: 35px;
-    font-size: max(8px)
+    max-height: 50px;
+    font-size: min(4vw, 11px) 
   }
 
   #hamburger-menu{
