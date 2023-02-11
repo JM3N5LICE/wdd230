@@ -26,7 +26,7 @@
         <div id="heading-stuff">
             
                 <div class="header-logo">
-                    <a href="https://jm3n5lice.github.io/wdd230/chamber/" ><img src="./images/Lonely-Mountain-200x200.png" alt="logo" id="logo-link"> </a>  
+                    <a href="https://jm3n5lice.github.io/wdd230/chamber/" ><img src="./images/Lonely-Mountain-200x200.webp" alt="logo" id="logo-link"> </a>  
                 </div>
                 <div id="header-words"><h1 class="header-words1">Lonely Mountain Chamber of Commerce</h1></div>
                 
@@ -77,7 +77,11 @@
             <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
         </div>
         <div id="hero" class="main-content">
-            <img src="./images/mountain.jpg" alt="Mountain-town">
+            <picture>
+                <source media="(max-width: 640px)" srcset="./images/small.jpg" />
+                <source media="(max-width: 800px)" srcset="./images/medium.jpg" />
+                <img src="./images/large.jpg" alt="Mountain-town">
+            </picture>
             <button class="button-15" id="hero-button" role="button">Join the Chamber</button>
         </div>
         <div id="news" class="main-content">
@@ -131,7 +135,7 @@
     <footer>
         <div id="footer-flex">
             <div class="footer-logo">
-                <img src="./images/Lonely-Mountain-200x200.png" alt="logo" id="footer-logo">
+                <img src="./images/Lonely-Mountain-200x200.webp" alt="logo" id="footer-logo">
             </div>
             <div class="footer-address">
                 <h3 id="footer-name">Lonely Mountain Chamber of Commerce</h3>
