@@ -7,7 +7,7 @@
     }
 
     /*main body grid*/
-  main{
+  .home-main{
      max-width: 1400px; 
     display:grid;
     grid-template-areas: "h h h"

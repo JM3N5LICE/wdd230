@@ -20,7 +20,7 @@
         display:block;
     }
 
-    main{
+    .home-main{
         display:grid;
         padding: 0.5rem;
         grid-template-areas: "e h h sp"

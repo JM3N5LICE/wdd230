@@ -278,6 +278,17 @@ body {
                          
   }
 
+  #days-discover{
+    
+    background-color: grey;
+    color: black;
+    min-width: 100%;
+    text-align: center;
+    align-items: center;
+    /* font-size: min(4vw, 15px); */
+                         
+  }
+
   /*Header stuff*/
  
  #heading-stuff {
@@ -343,7 +354,7 @@ body {
   
 
   /*main body grid*/
-  main{
+  .home-main{
     display:grid;
     grid-template-areas: "h"
                          "e"
