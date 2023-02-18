@@ -295,7 +295,7 @@ body {
                          
   }
 
-  picture img{            
+  .discoverimg{            
     display: block;
     /* box-shadow: 5px 5px 5px 5px rgb(2, 4, 5); */
     filter: blur(0.0em);
@@ -306,13 +306,13 @@ body {
     padding: 30px;
 }
 
-picture img[data-src]{
+.discoverimg[data-src]{
     filter: blur(0.3em);
     width: 300px;
     height: 400px;
 }
 
-picture img:hover{
+.discoverimg:hover{
     box-shadow: 5px 5px 5px 5px rgb(2, 4, 5);
 }
 
