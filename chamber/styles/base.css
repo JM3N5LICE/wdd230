@@ -278,16 +278,54 @@ body {
                          
   }
 
+/* Discover */
+
+  #dhw1{
+    margin-top: -25px;
+  }
+
   #days-discover{
-    
+    margin-bottom: -2px;
     background-color: grey;
     color: black;
     min-width: 100%;
     text-align: center;
-    align-items: center;
-    /* font-size: min(4vw, 15px); */
+    max-height: 30px;
+    font-size: min(4vw, 15px);
                          
   }
+
+  picture img{            
+    display: block;
+    /* box-shadow: 5px 5px 5px 5px rgb(2, 4, 5); */
+    filter: blur(0.0em);
+    transition: filter 0.5s;
+    width: 300px;
+    height: 400px;
+    margin: auto;
+    padding: 30px;
+}
+
+picture img[data-src]{
+    filter: blur(0.3em);
+    width: 300px;
+    height: 400px;
+}
+
+picture img:hover{
+    box-shadow: 5px 5px 5px 5px rgb(2, 4, 5);
+}
+
+#discover-pictures{
+  margin: auto;
+  max-width: 800px;
+  text-align: center;
+  background-color: #f6f4d2;
+}
+
+.disc-main-link{
+  color:black;
+}
 
   /*Header stuff*/
  

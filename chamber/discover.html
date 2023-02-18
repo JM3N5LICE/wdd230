@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Chamber of Commerce - Home">
-    <title>Chamber of Commerce Homepage</title>
+    <title>Chamber of Commerce Discover page</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -18,6 +18,7 @@
     <script src="./scripts/header-footer.js" defer></script>
     <script src="./scripts/main.js" defer></script>
     <script src="./scripts/localstorage.js" defer></script>  
+    <script src="./scripts/lazy-loading.js" defer></script>  
 
 </head>
 <body>
@@ -28,7 +29,10 @@
                 <div class="header-logo">
                     <a href="https://jm3n5lice.github.io/wdd230/chamber/" ><img src="./images/Lonely-Mountain-200x200.webp" alt="logo" id="logo-link"> </a>  
                 </div>
-                <div id="header-words"><h1 class="header-words1">Lonely Mountain Chamber of Commerce</h1></div>
+                <div id="header-words">
+                    <h1 class="header-words1">Lonely Mountain Chamber of Commerce</h1>
+                    <h1 id="dhw1">Discover</h1>
+                </div>
                 
             
             <div id="social-media">
@@ -52,8 +56,62 @@
             <div class="header-today"><h2></h2></div>
           
     </header>
-    <main>
+    <main id="discover">
+        <div id="discover-pictures">
+            <p class="discovery-info">
+                <br>
+                <br>
+                Country: New Zealand <br>
+                Population: 513,800 <br>
+                Economy: Agriculture, Manufacturing, Mining
+
+
+
+            </p>
+            <picture>
+                <img src="./images/Clipboard.jpg" data-src="./images/townsquare-300.jpg" alt="townsquare">
+            </picture>
+            <p class="discovery-info">
+                Come visit our rustic downtown shops and attractions! <br>
+                1234 Oakshield Drive
+            </p>
+            <picture>
+                <img src="./images/Clipboard.jpg" data-src="./images/hobbiton-300.jpg" alt="hobbiton">
+            </picture>
+            <p class="discovery-info">
+                The village of Hobbiton(Matamata) awaits you and your Hobbit fancies! <br>
+                13 Bag End Lane
+            </p>
+            <picture>
+                <img src="./images/Clipboard.jpg" data-src="./images/exercise-class-300.jpg" alt="exercise class">
+            </picture>
+            <p class="discovery-info">
+                Whether its training to fight for Gondor, or just to loosen your lower back <br>
+                the Local YMCA is the place to be for exercise instruction! <br>
+                1357 Dane Ave
+            </p>
+            <picture>
+                <img src="./images/Clipboard.jpg" data-src="./images/hike-300.jpg" alt="hikers on a trail">
+            </picture>
+            <p class="discovery-info">
+                Explore the trails of the hills to tak in the wildlife and rustic scenery! <br>
+                Contact the trails office at: <br>
+                123-456-7890 or visit us <br>
+                <a href="https://fakepage" target="_blank" class="disc-main-link">HERE!</a>
+            </p>
+            <picture>
+                <img src="./images/Clipboard.jpg" data-src="./images/museum-300.jpg" alt="museum">
+            </picture>
+            <p class="discovery-info">
+                View our wonderous culture and artifacts in the Lonely Mountain Museum!<br>
+                Book your Tickets 
+                <a href="https://fakepage" target="_blank" class="disc-main-link">HERE!</a><br>
+                <br>
+                <br>
+            </p>
+        </div>
         <h1 id="days-discover">It has been <span id='days-since-visit'></span> days since your last visit.</h1>
+        
     </main>
     <footer>
         <div id="footer-flex">
