@@ -114,5 +114,30 @@
     padding: 2px;
     
   }
+
+  .join-main{
+    display: grid;
+    grid-template-areas: "fmb "
+                         "fm"
+                         " pi";
+    max-width: 640px;
+    /* justify-content: center; */
+  }
+
+  form label.top input, form label.top select {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    /* width: 60%; */
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  form fieldset, .package-info {
+    padding:10px;
+  }
  
 }  

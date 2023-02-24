@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber of Commerce - Home">
+    <title>Chamber of Commerce Homepage</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/large.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0">
+    <script src="./scripts/header-footer.js" defer></script>
+    <script src="./scripts/main.js" defer></script>
+    <script src="./scripts/join.js" defer></script>
+      
+
+</head>
+<body>
+    <header>
+        <div id="meet-greet">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
+        <div id="heading-stuff">
+            
+                <div class="header-logo">
+                    <a href="https://jm3n5lice.github.io/wdd230/chamber/" ><img src="./images/Lonely-Mountain-200x200.webp" alt="logo" id="logo-link"> </a>  
+                </div>
+                <div id="header-words"><h1 class="header-words1">Lonely Mountain Chamber of Commerce</h1></div>
+                
+            
+            <div id="social-media">
+                <a href="https://www.instagram.com/" ><img src="./images/instagram-40.png" alt="Instagram logo" id="insta"></a>
+                <a href="https://www.facebook.com/" ><img src="./images/facebook-40.png" alt="Facebook logo" id="fb"></a>
+            </div>
+        </div>
+            <nav>
+                <button id="hamburger-menu">
+                    <span id="menu-closed">&equiv;</span>
+                    <span id="menu-open">X</span>
+                </button>
+                <ul id="navbar">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-today"><h2></h2></div>
+          
+    </header>
+    <main class="join-main">
+        <h1 id="form-banner">Chamber of Commerce Application</h1>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <!-- <legend>Applicant Information</legend> -->
+                <label class="top">First Name* <input type="text" name="fname" required></label>
+                <label class="top">Last Name* <input type="text" name="lname" required></label>
+                <label class="top non-required" for="positionTitle">Title <input type="text" id="positionTitle" name="positionTitle" pattern="^[A-Za-z\s\-]{7,}$"></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label class="top non-required">Cell Phone <input type="tel" name="phone" placeholder="1235551234"></label>
+                <label class="top">Business Name <input type="text" name="business-name" required></label>
+                <h3>Membership Level</h3>
+                <label class="bottom"><input type="radio" name="mlevel" value="non-profit">Non-Profit</label>
+                <label class="bottom"><input type="radio" name="mlevel" value="bronze">Bronze</label>
+                <label class="bottom"><input type="radio" name="mlevel" value="silver">Silver</label>
+                <label class="bottom"><input type="radio" name="mlevel" value="gold">Gold</label>
+                <label class="background">Background Description<textarea id="background" name="story" placeholder="Background" rows="5" cols="33"> </textarea> </label>
+                <input type="hidden" id="formLoadTime" name="formLoadTime" value="">
+                <input type="submit" value = "Join the Chamber" class="submitBtn">
+            </fieldset>
+
+            
+        </form>
+        <div class="package-info">
+            <h2>Membership levels benefits</h2>
+            <ul>
+                <li>For non profit organizations and there is no fee</li>
+            </ul>
+            <h3>Bronze Membership</h3>
+            <ul>
+                <li>15% discount on events</li>
+                <li>10% discount on advertising</li>
+                <li>Fee of $50/month</li>
+            </ul>
+            <h3>Silver Membership</h3>
+            <ul>
+                <li>25% discount on events</li>
+                <li>15% discount on advertising</li>
+                <li>Free participation in the trade fair</li>
+                <li>Fee of $100/month</li>
+            </ul>
+            <h3>Gold Membership</h3>
+            <ul>
+                <li>50% discount on events</li>
+                <li>50% discount on advertising</li>
+                <li>Free participation in the trade fair</li>
+                <li>5 free featured ads per year</li>
+                <li>1 free training per quarter</li>
+                <li>Fee of $250/month</li>
+                
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <div id="footer-flex">
+            <div class="footer-logo">
+                <img src="./images/Lonely-Mountain-200x200.webp" alt="logo" id="footer-logo">
+            </div>
+            <div class="footer-address">
+                <h3 id="footer-name">Lonely Mountain Chamber of Commerce</h3>
+                <p id="footer-address">4647 Durin Street<br>Waikato, New Zealand 2121</p>
+            </div>
+            <div class="footer-contact">
+                <p id="footer-email"><a href="mailto:notavalidaddress@nowhere.email">info@lmountainchamber.org</a></p>
+                <p id="footer-phone">208-865-5436</p>
+                <a href="https://goo.gl/maps/b17zTF1NkiE4FevSA" target="_blank">Location Map</a>
+            </div>
+        </div>
+        
+        <hr class="line">
+        <div class="project-info"><p>&copy; <span id="currentyear"></span> | Justyn Mencl | Rexburg, ID | Last Updated: <span id="lastmodified"></span></p></div>
+    </footer>
+</body>
+</html>

@@ -224,7 +224,7 @@ body {
   #spotlight{
     max-width: 100%;
   }
-  /* Hamburger menu stuff */
+  /* --------------------Hamburger menu stuff------------------- */
   
   #hamburger-menu{
     background-color: #172121;  
@@ -278,7 +278,7 @@ body {
                          
   }
 
-/* Discover */
+/* -------------------Discover-------------------- */
 
   #dhw1{
     margin-top: -25px;
@@ -327,6 +327,116 @@ body {
   color:black;
 }
 
+/* -------------------Join-------------------- */
+
+form fieldset, .package-info {
+  
+  border: 1px solid black;
+  border-radius: 10px; 
+  /* padding: .5rem 2%; */
+  width:100%;
+  max-width:26rem;
+  
+  
+}
+/* form legend {
+  color: #445ba9;
+  margin: 0 1rem;
+  padding: 0 .5rem;
+} */
+
+form label.top {
+  display: block;
+  padding-top: 1rem;
+  
+  font-size: .8rem;
+}
+
+form label.top input, form label.top select {
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: .75rem;
+  color: #555;
+  width: 80%;
+  max-width: 20rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label.bottom {
+  display: block;
+  padding:.75rem 0;
+  color: #555;
+}
+
+form input.submitBtn {
+  border: none;
+  background-color: #9c2c13;
+  color:white;
+  border-radius: 1rem;
+  padding: .75rem 1.5rem;
+  margin: 2rem 0 2rem 2%;
+  width: 96%;
+  max-width: 20rem;
+}
+
+
+
+form label.top input:required {
+  border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+  border-left: green solid 6px;
+}
+
+form label.background{
+  font-size: .8rem;
+  margin-top:3rem;
+}
+textarea {
+  display: block;
+  background-color: rgb(221,219,189);
+  padding: 10px;
+  max-width: 100%;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+}
+
+.join-main{
+  display: grid;
+  grid-template-areas: "fmb"
+                       "fm"
+                       " pi";
+  max-width: 900px;
+  align-content: center;
+  background-color: #f6f4d2;
+  padding:40px;
+  margin-top: -14px;
+}
+
+#form-banner{
+  grid-area: fmb;
+  text-align: center;
+  margin-top: -20px;
+}
+
+.package-info{
+  grid-area: pi;
+  max-width: 26rem;
+  border: 1px solid black;
+  
+  
+
+}
+
+form{
+  grid-area: fm;
+  
+}
   /*Header stuff*/
  
  #heading-stuff {

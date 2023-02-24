@@ -81,4 +81,30 @@
         grid-area: s2;
       }
 
+      .join-main{
+        display: grid;
+        grid-template-areas: "fmb fmb"
+                             "fm pi";
+        max-width: 900px;
+        align-content: center;
+      }
+
+      .package-info{
+        grid-area: pi;
+        max-width: 100%;
+        border: 1px solid black;
+        margin-left: 70px;
+        margin-right: -65px;
+      }
+      form fieldset, .package-info {
+  
+        border: 1px solid black;
+        border-radius: 10px; 
+        /* padding: .5rem 2%; */
+        width:100%;
+        max-width:26rem;
+        
+        
+      }
+
 }
