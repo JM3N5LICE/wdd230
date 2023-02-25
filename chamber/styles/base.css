@@ -377,7 +377,7 @@ form input.submitBtn {
   border-radius: 1rem;
   padding: .75rem 1.5rem;
   margin: 2rem 0 2rem 2%;
-  width: 96%;
+  width: 80%;
   max-width: 20rem;
 }
 
@@ -389,6 +389,10 @@ form label.top input:required {
 
 form label.top input:required:valid {
   border-left: green solid 6px;
+}
+
+form label.top input:not([required]) {
+  border-left: grey solid 6px;
 }
 
 form label.background{
@@ -428,7 +432,7 @@ textarea {
   grid-area: pi;
   max-width: 26rem;
   border: 1px solid black;
-  
+  padding:12px;
   
 
 }
@@ -436,6 +440,14 @@ textarea {
 form{
   grid-area: fm;
   
+}
+
+/*<--------------------Thank you-------------------->*/
+.thanks-main{
+  text-align: center;
+  padding:10rem;
+  background-color: #f6f4d2;
+  margin-top: -14px;
 }
   /*Header stuff*/
  
