@@ -1,0 +1,8 @@
+table{
+    border: 1px black solid;
+    border-collapse: collapse;
+}
+
+thead tr{
+    background-color: #aaa9a9;
+}
