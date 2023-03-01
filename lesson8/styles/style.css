@@ -1,0 +1,31 @@
+table{
+    border: 1px black solid;
+    border-collapse: collapse;
+}
+thead tr{
+    background-color: #067206;
+}
+thead tr:nth-child(2) th:nth-child(1){
+    background-color: #034703;
+    border-top: 1px tan solid;
+}
+thead tr:nth-child(2) th{
+    background-color: #019101;
+}
+tr{
+    /* border: 1px black solid; */
+    background-color: #e7ceae;
+    
+}
+tbody tr:nth-child(even){
+    background-color: #ccaa7e;
+}
+td, th{
+    border: 1px grey solid;
+    padding: 1rem;
+    text-align: center;
+}
+caption{            
+    padding: 1rem;
+    caption-side: bottom;
+}
