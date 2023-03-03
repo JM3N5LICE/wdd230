@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
+body {
+    font-family: 'Dosis', sans-serif;
+}
+
 .cards{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
