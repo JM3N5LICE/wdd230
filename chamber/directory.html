@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0">
     <script src="./scripts/header-footer.js" defer></script>
     <script src="./scripts/main.js" defer></script>
+    <script src="./scripts/discovery.js" defer></script>  
       
 
 </head>
@@ -52,8 +53,12 @@
             <div class="header-today"><h2></h2></div>
           
     </header>
-    <main>
-
+    <main class="directory-main">
+        <div id='directory-selector'>
+          <button id="directory-grid" class="active">GRID</button>
+          <button id="directory-list">LIST</button></div>
+        <div id='directory-data' class='directory-cards'>
+        </div>
     </main>
     <footer>
         <div id="footer-flex">

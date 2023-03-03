@@ -449,6 +449,78 @@ form{
   background-color: #f6f4d2;
   margin-top: -14px;
 }
+
+/* Directory Page Stuff */
+.directory-main{
+  width: 100%;
+}
+
+#directory-selector{
+  width: 100%;
+  text-align: center;
+}
+
+#directory-selector button{
+  padding: 1rem;
+  margin: .5rem;
+  border-radius: 5px;
+  background-color: grey;
+  border: 1px black solid;
+}
+
+#directory-selector button.active{
+  background-color: orangered;
+}
+
+/* Cards view */
+
+.directory-cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  justify-items: center;
+}
+
+.directory-cards section{
+  text-align: center;    
+  border: 2px solid grey;    
+  width: 300px;
+  background-color: #d49764;
+  padding: 1rem;
+  margin: .5rem;
+}
+
+.directory-cards .gold-member{
+  box-shadow: inset 1rem 1rem gold;
+}
+
+/* List View */
+
+.directory-list{    
+  display: grid;
+  justify-items: center;   
+  padding: 1rem;    
+}
+
+.directory-list section img{
+  display: none;
+}
+
+.directory-list section {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  width: 70%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.directory-list section:nth-child(odd) {
+  background-color: paleturquoise;
+}
+
+.directory-list section:nth-child(even) {
+  background-color: azure;
+}
+
   /*Header stuff*/
  
  #heading-stuff {

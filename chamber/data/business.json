@@ -1,0 +1,85 @@
+{
+    "businesses": [
+        {
+            "name":"Apartment Zoom",
+            "streetAddress":"123 Main Street",
+            "cityStateZip":"Rexburg, ID 83440",
+            "phoneNumber":"208-356-9999",
+            "websiteURL":"http://www.apartmentzoom.com",
+            "imageURL":"./images/directory-1.jpg",
+            "membershipLevel":"gold"
+        },
+        {
+            "name":"Foo Name",
+            "streetAddress":"124 Main Street",
+            "cityStateZip":"Rexburg, ID 83440",
+            "phoneNumber":"208-356-9998",
+            "websiteURL":"http://www.foo.com",
+            "imageURL":"./images/directory-1.jpg",
+            "membershipLevel":"silver"
+        },
+        {
+            "name":"Foo Name",
+            "streetAddress":"124 Main Street",
+            "cityStateZip":"Rexburg, ID 83440",
+            "phoneNumber":"208-356-9998",
+            "websiteURL":"http://www.foo.com",
+            "imageURL":"./images/directory-1.jpg",
+            "membershipLevel":"silver"
+        },
+        {
+            "name":"Foo Name",
+            "streetAddress":"124 Main Street",
+            "cityStateZip":"Rexburg, ID 83440",
+            "phoneNumber":"208-356-9998",
+            "websiteURL":"http://www.foo.com",
+            "imageURL":"./images/directory-1.jpg",
+            "membershipLevel":"silver"
+        },
+        {
+            "name":"Foo Name",
+            "streetAddress":"124 Main Street",
+            "cityStateZip":"Rexburg, ID 83440",
+            "phoneNumber":"208-356-9998",
+            "websiteURL":"http://www.foo.com",
+            "imageURL":"./images/directory-1.jpg",
+            "membershipLevel":"silver"
+        },
+        {
+            "name":"Foo Name",
+            "streetAddress":"124 Main Street",
+            "cityStateZip":"Rexburg, ID 83440",
+            "phoneNumber":"208-356-9998",
+            "websiteURL":"http://www.foo.com",
+            "imageURL":"./images/directory-1.jpg",
+            "membershipLevel":"silver"
+        },
+        {
+            "name":"Foo Name",
+            "streetAddress":"124 Main Street",
+            "cityStateZip":"Rexburg, ID 83440",
+            "phoneNumber":"208-356-9998",
+            "websiteURL":"http://www.foo.com",
+            "imageURL":"./images/directory-1.jpg",
+            "membershipLevel":"silver"
+        },
+        {
+            "name":"Foo Name",
+            "streetAddress":"124 Main Street",
+            "cityStateZip":"Rexburg, ID 83440",
+            "phoneNumber":"208-356-9998",
+            "websiteURL":"http://www.foo.com",
+            "imageURL":"./images/directory-1.jpg",
+            "membershipLevel":"silver"
+        },
+        {
+            "name":"Foo Name",
+            "streetAddress":"124 Main Street",
+            "cityStateZip":"Rexburg, ID 83440",
+            "phoneNumber":"208-356-9998",
+            "websiteURL":"http://www.foo.com",
+            "imageURL":"./images/directory-1.jpg",
+            "membershipLevel":"silver"
+        }                
+    ]
+}
