@@ -1,0 +1,35 @@
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    
+}
+
+footer{
+    display: grid;
+    justify-content: center;
+    background-color: #008000;
+    color: white;
+    height: 3.5rem;
+}
+section{
+    background-color: bisque;
+    margin:15px;
+    text-align: center;
+    width:fit-content;
+    justify-self: center;
+}
+
+header{
+    display: grid;
+    justify-content: center;
+    background-color: #008000;
+    color: white;
+}
+
+img {
+    padding: 10px;
+}
+
+main{
+    justify-content: center;
+}
