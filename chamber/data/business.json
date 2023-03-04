@@ -7,6 +7,7 @@
             "phoneNumber":"208-356-9999",
             "websiteURL":"http://www.durinsvault.com",
             "imageURL":"./images/durinsVault.png",
+            "altTxt":"bank logo",
             "membershipLevel":"gold"
         },
         {
@@ -16,6 +17,7 @@
             "phoneNumber":"208-356-9998",
             "websiteURL":"http://www.gamgeeproduce.com",
             "imageURL":"./images/gamgeeProduce.png",
+            "altTxt":"produce logo",
             "membershipLevel":"silver"
         },
         {
@@ -25,6 +27,7 @@
             "phoneNumber":"208-356-9997",
             "websiteURL":"http://www.gimlispizza.com",
             "imageURL":"./images/gimlisPizza.png",
+            "altTxt":"beard logo",
             "membershipLevel":"bronze"
         },
         {
@@ -34,6 +37,7 @@
             "phoneNumber":"208-356-9996",
             "websiteURL":"http://www.hobbitonhomeowners.com",
             "imageURL":"./images/hobbitonHOA.png",
+            "altTxt":"hobbithole logo",
             "membershipLevel":"silver"
         },
         {
@@ -43,6 +47,7 @@
             "phoneNumber":"208-356-9995",
             "websiteURL":"http://www.lembasbakery.com",
             "imageURL":"./images/lembasBakery.png",
+            "altTxt":"bread logo",
             "membershipLevel":"bronze"
         },
         {
@@ -52,6 +57,7 @@
             "phoneNumber":"208-356-9994",
             "websiteURL":"http://www.oakenshieldbrewery.com",
             "imageURL":"./images/oakenshieldBrewery.png",
+            "altTxt":"shield logo",
             "membershipLevel":"gold"
         },
         {
@@ -61,6 +67,7 @@
             "phoneNumber":"208-356-9993",
             "websiteURL":"http://www.prancingponyinn.com",
             "imageURL":"./images/prancingPony.png",
+            "altTxt":"pony logo",
             "membershipLevel":"silver"
         },
         {
@@ -70,6 +77,7 @@
             "phoneNumber":"208-356-9992",
             "websiteURL":"http://www.rohanranchsupply.com",
             "imageURL":"./images/rohanSupply.png",
+            "altTxt":"rohan logo",
             "membershipLevel":"gold"
         },
         {
@@ -79,6 +87,7 @@
             "phoneNumber":"208-356-9991",
             "websiteURL":"http://www.stridergrocery.com",
             "imageURL":"./images/striderGrocery.png",
+            "altTxt":"bow and arrow logo",
             "membershipLevel":"gold"
         }                
     ]
