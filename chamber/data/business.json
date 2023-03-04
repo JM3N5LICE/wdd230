@@ -1,85 +1,85 @@
 {
     "businesses": [
         {
-            "name":"Apartment Zoom",
-            "streetAddress":"123 Main Street",
-            "cityStateZip":"Rexburg, ID 83440",
+            "name":"Durin's Vault",
+            "streetAddress":"123 Durin's Street",
+            "cityStateZip":"Waikato, New Zealand 2121",
             "phoneNumber":"208-356-9999",
-            "websiteURL":"http://www.apartmentzoom.com",
-            "imageURL":"./images/directory-1.jpg",
+            "websiteURL":"http://www.durinsvault.com",
+            "imageURL":"./images/durinsVault.png",
             "membershipLevel":"gold"
         },
         {
-            "name":"Foo Name",
+            "name":"Gamgee Produce",
             "streetAddress":"124 Main Street",
-            "cityStateZip":"Rexburg, ID 83440",
+            "cityStateZip":"Waikato, New Zealand 2121",
             "phoneNumber":"208-356-9998",
-            "websiteURL":"http://www.foo.com",
-            "imageURL":"./images/directory-1.jpg",
+            "websiteURL":"http://www.gamgeeproduce.com",
+            "imageURL":"./images/gamgeeProduce.png",
             "membershipLevel":"silver"
         },
         {
-            "name":"Foo Name",
-            "streetAddress":"124 Main Street",
-            "cityStateZip":"Rexburg, ID 83440",
-            "phoneNumber":"208-356-9998",
-            "websiteURL":"http://www.foo.com",
-            "imageURL":"./images/directory-1.jpg",
+            "name":"Gimli's Pizza",
+            "streetAddress":"567 Moria Boulivard",
+            "cityStateZip":"Waikato, New Zealand 2121",
+            "phoneNumber":"208-356-9997",
+            "websiteURL":"http://www.gimlispizza.com",
+            "imageURL":"./images/gimlisPizza.png",
+            "membershipLevel":"bronze"
+        },
+        {
+            "name":"Hobbiton HOA",
+            "streetAddress":"147 King's Way",
+            "cityStateZip":"Waikato, New Zealand 2121",
+            "phoneNumber":"208-356-9996",
+            "websiteURL":"http://www.hobbitonhomeowners.com",
+            "imageURL":"./images/hobbitonHOA.png",
             "membershipLevel":"silver"
         },
         {
-            "name":"Foo Name",
-            "streetAddress":"124 Main Street",
-            "cityStateZip":"Rexburg, ID 83440",
-            "phoneNumber":"208-356-9998",
-            "websiteURL":"http://www.foo.com",
-            "imageURL":"./images/directory-1.jpg",
+            "name":"Lembas Bakery",
+            "streetAddress":"174 Mirkwood Way",
+            "cityStateZip":"Waikato, New Zealand 2121",
+            "phoneNumber":"208-356-9995",
+            "websiteURL":"http://www.lembasbakery.com",
+            "imageURL":"./images/lembasBakery.png",
+            "membershipLevel":"bronze"
+        },
+        {
+            "name":"Oakenshield Brewery",
+            "streetAddress":"17 King's Way",
+            "cityStateZip":"Waikato, New Zealand 2121",
+            "phoneNumber":"208-356-9994",
+            "websiteURL":"http://www.oakenshieldbrewery.com",
+            "imageURL":"./images/oakenshieldBrewery.png",
+            "membershipLevel":"gold"
+        },
+        {
+            "name":"Prancing Pony",
+            "streetAddress":"347 Main Street",
+            "cityStateZip":"Waikato, New Zealand 2121",
+            "phoneNumber":"208-356-9993",
+            "websiteURL":"http://www.prancingponyinn.com",
+            "imageURL":"./images/prancingPony.png",
             "membershipLevel":"silver"
         },
         {
-            "name":"Foo Name",
-            "streetAddress":"124 Main Street",
-            "cityStateZip":"Rexburg, ID 83440",
-            "phoneNumber":"208-356-9998",
-            "websiteURL":"http://www.foo.com",
-            "imageURL":"./images/directory-1.jpg",
-            "membershipLevel":"silver"
+            "name":"Rohan Ranch Supply",
+            "streetAddress":"1267 Moria Boulivard",
+            "cityStateZip":"Waikato, New Zealand 2121",
+            "phoneNumber":"208-356-9992",
+            "websiteURL":"http://www.rohanranchsupply.com",
+            "imageURL":"./images/rohanSupply.png",
+            "membershipLevel":"gold"
         },
         {
-            "name":"Foo Name",
-            "streetAddress":"124 Main Street",
-            "cityStateZip":"Rexburg, ID 83440",
-            "phoneNumber":"208-356-9998",
-            "websiteURL":"http://www.foo.com",
-            "imageURL":"./images/directory-1.jpg",
-            "membershipLevel":"silver"
-        },
-        {
-            "name":"Foo Name",
-            "streetAddress":"124 Main Street",
-            "cityStateZip":"Rexburg, ID 83440",
-            "phoneNumber":"208-356-9998",
-            "websiteURL":"http://www.foo.com",
-            "imageURL":"./images/directory-1.jpg",
-            "membershipLevel":"silver"
-        },
-        {
-            "name":"Foo Name",
-            "streetAddress":"124 Main Street",
-            "cityStateZip":"Rexburg, ID 83440",
-            "phoneNumber":"208-356-9998",
-            "websiteURL":"http://www.foo.com",
-            "imageURL":"./images/directory-1.jpg",
-            "membershipLevel":"silver"
-        },
-        {
-            "name":"Foo Name",
-            "streetAddress":"124 Main Street",
-            "cityStateZip":"Rexburg, ID 83440",
-            "phoneNumber":"208-356-9998",
-            "websiteURL":"http://www.foo.com",
-            "imageURL":"./images/directory-1.jpg",
-            "membershipLevel":"silver"
+            "name":"Strider Grocery",
+            "streetAddress":"639 Main Street",
+            "cityStateZip":"Waikato, New Zealand 2121",
+            "phoneNumber":"208-356-9991",
+            "websiteURL":"http://www.stridergrocery.com",
+            "imageURL":"./images/striderGrocery.png",
+            "membershipLevel":"gold"
         }                
     ]
 }

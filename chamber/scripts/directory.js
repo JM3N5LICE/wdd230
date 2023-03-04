@@ -44,6 +44,12 @@ const displayBusinesses = (businesss) => {
     if (business.membershipLevel=='gold'){
       card.classList.add('gold-member');
     }
+    else if (business.membershipLevel=='silver'){
+      card.classList.add('silver-member');
+    }
+    else if (business.membershipLevel=='bronze'){
+      card.classList.add('bronze-member');
+    }
     cards.appendChild(card);
   }); // end of forEach loop
   

@@ -464,12 +464,16 @@ form{
   padding: 1rem;
   margin: .5rem;
   border-radius: 5px;
-  background-color: grey;
-  border: 1px black solid;
+  /* background-color: grey; */
+  border: 1px grey solid;
+  
+  background-image: linear-gradient(#c9c6c5, #5a5958);
 }
 
 #directory-selector button.active{
-  background-color: orangered;
+  background-image: linear-gradient(#f8ac89, #f04d02);
+  border: 1px #f8ac89;
+  box-shadow: rgba(224, 106, 10, 0.5) 0 0 0 3px;
 }
 
 /* Cards view */
@@ -484,13 +488,28 @@ form{
   text-align: center;    
   border: 2px solid grey;    
   width: 300px;
-  background-color: #d49764;
+  background-color: #f6f4d2;
   padding: 1rem;
   margin: .5rem;
 }
 
+.directory-cards section a{
+  color:#587d71;
+}
+
 .directory-cards .gold-member{
-  box-shadow: inset 1rem 1rem gold;
+  box-shadow: 10px 5px 5px gold;
+  border: 2px solid gold; 
+}
+
+.directory-cards .silver-member{
+  box-shadow: 10px 5px 5px rgb(139, 139, 139);
+  border: 2px solid rgb(139, 139, 139); 
+}
+
+.directory-cards .bronze-member{
+  box-shadow: 10px 5px 5px rgb(205, 127, 50);
+  border: 2px solid rgb(205, 127, 50); 
 }
 
 /* List View */
@@ -514,11 +533,15 @@ form{
 }
 
 .directory-list section:nth-child(odd) {
-  background-color: paleturquoise;
+  background-color: rgb(216, 219, 217);
 }
 
 .directory-list section:nth-child(even) {
-  background-color: azure;
+  background-color: rgb(187, 189, 188);
+}
+
+.directory-list section a {
+  color:#3b534c;
 }
 
   /*Header stuff*/
