@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Chamber of Commerce - Home">
     <title>Chamber of Commerce Homepage</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./styles/base.css">
@@ -73,7 +73,7 @@
             <p>Wind Chill: <span id="windchill">?</span></p>
         </div>
         <div id="join" class="main-content">
-            <button class="button-15" id="join-button">Join Us!</button>
+            <button class="button-15" id="join-button" onclick = "window.location.href='join.html';">Join Us!</button>
             <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
         </div>
         <div id="hero" class="main-content">
@@ -82,7 +82,7 @@
                 <source media="(max-width: 800px)" srcset="./images/medium.jpg" >
                 <img src="./images/large.jpg" alt="Mountain-town">
             </picture>
-            <button class="button-15" id="hero-button">Join the Chamber</button>
+            <button class="button-15" id="hero-button" onclick = "window.location.href='join.html';">Join the Chamber</button>
         </div>
         <div id="news" class="main-content">
             <h3>News Release</h3>
@@ -91,35 +91,34 @@
         <div id="spotlights" >
             <div id="spotlight1" class="main-content">
                 <h3 id="sl1name">Clothing Drive</h3>
-                <p>Give Back to the Needy!</p>
+                
                 <img id="spotlight1img" src="./images/icons8-dress-48.png" alt="dress">
                 <hr class="line">
-                <p class="email">
-                    <br>
+                <p id="address1">Give Back to the Needy!</p>
+                <p id="zipcode1"></p>
+                <p id="sp1email" class="email">
                     lmtnclothescharity@gmail.com <br>
-                    <br>
-                    +1 208-365-1234
                 </p>
             </div>
             <div id="spotlight2" class="main-content">
                 <h3 id="sl2name">Computer Club</h3>
-                <p>A place where kids can be kids!</p>
+                
                 <img id="spotlight2img" src="./images/icons8-monitor-40.png" alt="computer monitor">
                 <hr class="line">
-                <p class="email">
-                    <br>
+                <p id="address2">A place where kids can be kids!</p>
+                <p id="zipcode2"></p>
+                <p id="sp2email" class="email">
                     Wesley Middle School<br>
-                    <br>
-                    333 Tolkien Street
-
                 </p>
             </div>
             <div id="spotlight3" class="main-content">
                 <h3 id="sl3name">Community Greenhouse</h3>
-                <p>Come and Grow Together!</p>
+                
                 <img id="spotlight3img" src="./images/icons8-greenhouse-40.png" alt="Greenhouse">
                 <hr class="line">
-                <p class="email">
+                <p id="address3">Come and Grow Together!</p>
+                <p id="zipcode3"></p>
+                <p id="sp3email" class="email">
                     <br>
                     Lonely Mountain Community Gardens<br>
                     <br>
@@ -144,7 +143,7 @@
             <div class="footer-contact">
                 <p id="footer-email"><a href="mailto:notavalidaddress@nowhere.email">info@lmountainchamber.org</a></p>
                 <p id="footer-phone">208-865-5436</p>
-                <a href="https://goo.gl/maps/b17zTF1NkiE4FevSA" target="_blank">Location Map</a>
+                <a href="https://goo.gl/maps/8ngriS51drArRcY27" target="_blank">Location Map</a>
             </div>
         </div>
         
