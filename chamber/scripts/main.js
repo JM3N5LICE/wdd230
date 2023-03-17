@@ -29,7 +29,7 @@ const sp3email = document.querySelector('#sp3email');
 const address1 = document.querySelector('#address1');
 const address2 = document.querySelector('#address2');
 const address3 = document.querySelector('#address3');
-const zipcode1 = document.querySelector('#zipcode1');
+
 
 
 
@@ -40,7 +40,22 @@ function displaySpotlights(businessList){
     var elt = Math.floor(Math.random() * businessList.length)
     spotlights.push(businessList.splice(elt, 1));
   }
-
+// This way is more efficient but I don't want to figure out css
+// spotlights.forEach(spotlight  => {
+//   console.log(spotlight[0])
+//   let section = document.createElement('section')
+//   let h3 = document.createElement('h3')
+//   let img = document.createElement('img')
+//   let p = document.createElement('p')
+//   h3.textContent = spotlight[0].name;
+//   img.setAttribute('src', spotlight[0].imageURL)
+//   p.textContent = spotlight[0].websiteURL
+//   let spotlightContainer = document.querySelector('#spotlights')
+//   section.appendChild(h3)
+//   section.appendChild(img)
+//   section.appendChild(p)
+//   spotlightContainer.appendChild(section)}
+// )
   // Now display stuff
   console.info(spotlights);
   const img1 = spotlights[0][0].imageURL;
@@ -49,10 +64,9 @@ function displaySpotlights(businessList){
   sl1name.textContent = sln1;
   const sle1 = spotlights[0][0].websiteURL;
   sp1email.textContent = sle1;
-  const sla1 = spotlights[0][0].streetAddress;
-  address1.textContent = sla1;
-  const zc1 = spotlights[0][0].cityStateZip;
-  zipcode1.textContent = zc1;
+  const description1 = spotlights[0][0].description;
+  address1.textContent = description1;
+  
 
   const img2 = spotlights[1][0].imageURL;
   spotlight2img.setAttribute('src', img2);
@@ -60,10 +74,9 @@ function displaySpotlights(businessList){
   sl2name.textContent = sln2;
   const sle2 = spotlights[1][0].websiteURL;
   sp2email.textContent = sle2;
-  const sla2 = spotlights[1][0].streetAddress;
-  address2.textContent = sla2;
-  const zc2 = spotlights[1][0].cityStateZip;
-  zipcode2.textContent = zc2;
+  const description2 = spotlights[1][0].description;
+  address2.textContent = description2;
+  
 
   const img3 = spotlights[2][0].imageURL;
   spotlight3img.setAttribute('src', img3);
@@ -71,10 +84,9 @@ function displaySpotlights(businessList){
   sl3name.textContent = sln3;
   const sle3 = spotlights[2][0].websiteURL;
   sp3email.textContent = sle3;
-  const sla3 = spotlights[2][0].streetAddress;
-  address3.textContent = sla3;
-  const zc3 = spotlights[2][0].cityStateZip;
-  zipcode3.textContent = zc3;
+  const description3 = spotlights[2][0].description;
+  address3.textContent = description3;
+  
 }
 
 async function getBusinessData() {

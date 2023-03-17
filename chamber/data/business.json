@@ -8,7 +8,8 @@
             "websiteURL":"http://www.durinsvault.com",
             "imageURL":"./images/durinsVault.png",
             "altTxt":"bank logo",
-            "membershipLevel":"gold"
+            "membershipLevel":"gold",
+            "description" : "Store your gold in dungeons deep and caverns old!"
         },
         {
             "name":"Gamgee Produce",
@@ -18,7 +19,8 @@
             "websiteURL":"http://www.gamgeeproduce.com",
             "imageURL":"./images/gamgeeProduce.png",
             "altTxt":"produce logo",
-            "membershipLevel":"silver"
+            "membershipLevel":"silver",
+            "description" : "Po-ta-toes!"
         },
         {
             "name":"Gimli's Pizza",
@@ -28,7 +30,8 @@
             "websiteURL":"http://www.gimlispizza.com",
             "imageURL":"./images/gimlisPizza.png",
             "altTxt":"beard logo",
-            "membershipLevel":"bronze"
+            "membershipLevel":"bronze",
+            "description" : "Let them come! There is one dwarf yet in Moria who still draws breath!"
         },
         {
             "name":"Hobbiton HOA",
@@ -38,7 +41,8 @@
             "websiteURL":"http://www.hobbitonhomeowners.com",
             "imageURL":"./images/hobbitonHOA.png",
             "altTxt":"hobbithole logo",
-            "membershipLevel":"silver"
+            "membershipLevel":"silver",
+            "description" : "In a hole in the ground there lived a hobbit..."
         },
         {
             "name":"Lembas Bakery",
@@ -48,7 +52,8 @@
             "websiteURL":"http://www.lembasbakery.com",
             "imageURL":"./images/lembasBakery.png",
             "altTxt":"bread logo",
-            "membershipLevel":"bronze"
+            "membershipLevel":"bronze",
+            "description" : "One small bite will fill the stomach of a grown man."
         },
         {
             "name":"Oakenshield Brewery",
@@ -58,7 +63,8 @@
             "websiteURL":"http://www.oakenshieldbrewery.com",
             "imageURL":"./images/oakenshieldBrewery.png",
             "altTxt":"shield logo",
-            "membershipLevel":"gold"
+            "membershipLevel":"gold",
+            "description" : "If this is to end in fire, then we shall all burn together!"
         },
         {
             "name":"Prancing Pony",
@@ -68,7 +74,8 @@
             "websiteURL":"http://www.prancingponyinn.com",
             "imageURL":"./images/prancingPony.png",
             "altTxt":"pony logo",
-            "membershipLevel":"silver"
+            "membershipLevel":"silver",
+            "description" : "Our business is our own!"
         },
         {
             "name":"Rohan Ranch Supply",
@@ -78,7 +85,8 @@
             "websiteURL":"http://www.rohanranchsupply.com",
             "imageURL":"./images/rohanSupply.png",
             "altTxt":"rohan logo",
-            "membershipLevel":"gold"
+            "membershipLevel":"gold",
+            "description" : "Arise, arise, Riders of Théoden!"
         },
         {
             "name":"Strider Grocery",
@@ -88,7 +96,8 @@
             "websiteURL":"http://www.stridergrocery.com",
             "imageURL":"./images/striderGrocery.png",
             "altTxt":"bow and arrow logo",
-            "membershipLevel":"gold"
+            "membershipLevel":"gold",
+            "description" : "There may come a day where you settle for cheap qulaity. But it is not this day"
         }                
     ]
 }
