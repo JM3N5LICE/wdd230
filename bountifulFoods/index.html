@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,27 +9,39 @@
     <title>Bountiful Foods - Home</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/large.css">
     <script src="./scripts/main.js" defer></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <button id="hamburger-menu">
-                <span id="menu-closed">&equiv;</span>
-                <span id="menu-open">X</span>
-            </button>
-            <ul id="navbar">
+<header>
+<div id="myNav" class="overlay" >
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="index.html">Home</a>
+    <a href="fresh.html">Fresh</a>
+    <a href="aboutUs.html">About Us</a>
+  </div>
+</div>
+<div class="navigation">
+    <nav>
+        <ul id="navbar">
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="fresh.html">Fresh</a></li>
             <li><a href="aboutUs.html">About Us</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
+    </nav>
+</div>
 
-    </main>
-    <footer>
-        
-    </footer>
+
+<span style="font-size:45px;cursor:pointer; color:white" onclick="openNav()" class="navigation" id="hamburger-menu">&#9776;</span>
+<h1 id="heading"> Bountiful Foods</h1>
+<img id="image" src="./images/logo-100x100.png" alt="logo">
+</header>
+<main>
+
+</main>
+<footer>
+
+</footer>
 </body>
 </html>

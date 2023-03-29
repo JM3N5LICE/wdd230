@@ -1,0 +1,10 @@
+@media screen and (min-width: 365px) {
+    #heading{
+        grid-area: h;
+        text-align: center;
+        color:white;
+        font-size: 22px;
+        margin-top: 22px;
+        
+         }
+}
