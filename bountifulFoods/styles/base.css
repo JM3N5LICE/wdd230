@@ -1,4 +1,4 @@
-
+/*Header stuff*/
    header {
     display:grid;
     grid-template-areas: "n h i";    
@@ -7,6 +7,14 @@
     width:100%;
 }
 
+main {
+  min-height: calc(800px);
+}
+
+footer{
+  background:#2f0084;
+  height: 100px;
+}
 .navigation{
   grid-area: n;
     
@@ -29,7 +37,7 @@
   border: 1px solid black;
    }
    
-  
+  /*Navigation hamburger yaz*/
    nav {
     display: none;
    }
@@ -42,7 +50,7 @@
    body {
     font-family: 'Lato', sans-serif;
   }
-  
+  /*Nav Overlay in smaller views*/
   .overlay {
     height: 100%;
     width: 0;
