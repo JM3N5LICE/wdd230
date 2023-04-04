@@ -7,13 +7,68 @@
     <meta name="description" content="Bountiful Foods - Fresh">
     <title>Bountiful Foods - Fresh</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/large.css">
+    <script src="./scripts/main.js" defer></script>
+    <script src="./scripts/fresh.js" defer></script>
 </head>
 <body>
     <header>
-
+        <div id="myNav" class="overlay" >
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a href="fresh.html">Fresh</a>
+            <a href="aboutUs.html">About Us</a>
+          </div>
+        </div>
+        <div class="navigation">
+            <nav>
+                <ul id="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fresh.html" class="active">Fresh</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        
+        <span style="font-size:45px;cursor:pointer; color:white" onclick="openNav()" class="navigation" id="hamburger-menu">&#9776;</span>
+        <h1 id="heading"> Bountiful Foods</h1>
+        <img id="image" src="./images/logo-100x100.png" alt="logo">
     </header>
     <main>
-
+        <form id="specialty-drink-form">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+            
+            <label for="fruit1">Fruit 1:</label>
+            <select id="fruit1" name="fruit1" required>
+              <option value="">--Select a fruit--</option>
+            </select><br><br>
+            
+            <label for="fruit2">Fruit 2:</label>
+            <select id="fruit2" name="fruit2" required>
+              <option value="">--Select a fruit--</option>
+            </select><br><br>
+            
+            <label for="fruit3">Fruit 3:</label>
+            <select id="fruit3" name="fruit3" required>
+              <option value="">--Select a fruit--</option>
+            </select><br><br>
+            
+            <label for="special-instructions">Special Instructions:</label><br>
+            <textarea id="special-instructions" name="special-instructions" rows="4" cols="50"></textarea><br><br>
+            
+            <input type="submit" value="Place Order">
+          </form>
     </main>
     <footer>
         
