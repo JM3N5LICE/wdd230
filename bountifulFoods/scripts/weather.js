@@ -29,7 +29,7 @@ function getWeatherData() {
             const itemDate = new Date(item.dt * 1000);
             const timeDifference = itemDate.getTime() - currentDate.getTime();
             const dayDifference = timeDifference / (1000 * 3600 * 24);
-            return dayDifference >= 0 && dayDifference <= 3;
+            return dayDifference >= 0 && dayDifference <= 2;
           });
           
           // Get highest temperature, condition description, humidity, and icon for each day

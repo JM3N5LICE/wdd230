@@ -37,7 +37,16 @@ form.addEventListener('submit', (event) => {
         total.calories += fruit.nutritions.calories;
         total.sugar += fruit.nutritions.sugar;
         return total;
-      }, { carbohydrates: 0, protein: 0, fat: 0, calories: 0, sugar: 0 });
+      }, { carbohydrates: 0.00, protein: 0.00, fat: 0.00, calories: 0, sugar: 0.00 });
+
+      // Multiply nutrition values by 100, round to nearest integer, then divide by 100
+      const roundedNutritionInfo = {
+        carbohydrates: nutritionInfo.carbohydrates.toFixed(1),
+        protein: nutritionInfo.protein.toFixed(1),
+        fat: nutritionInfo.fat.toFixed(1),
+        calories: nutritionInfo.calories.toFixed(0),
+        sugar: nutritionInfo.sugar.toFixed(1)
+      };
 
       // navigate to order confirmation page
       const queryParams = new URLSearchParams({
@@ -48,11 +57,11 @@ form.addEventListener('submit', (event) => {
         fruit2: fruit2,
         fruit3: fruit3,
         specialInstructions: specialInstructions,
-        carbohydrates: nutritionInfo.carbohydrates,
-        protein: nutritionInfo.protein,
-        fat: nutritionInfo.fat,
-        calories: nutritionInfo.calories,
-        sugar: nutritionInfo.sugar,
+        carbohydrates: roundedNutritionInfo.carbohydrates,
+        protein: roundedNutritionInfo.protein,
+        fat: roundedNutritionInfo.fat,
+        calories: roundedNutritionInfo.calories,
+        sugar: roundedNutritionInfo.sugar,
         orderDate: new Date().toISOString()
       });
       

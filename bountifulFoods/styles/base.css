@@ -18,7 +18,7 @@ footer{
 }
 .navigation{
   grid-area: n;
-    
+
    }
 #heading{
   grid-area: h;
@@ -140,3 +140,162 @@ footer{
     height: 230px;
   }
   
+  /* Order Confirmation Stuff */
+  #orderConfirmationMain {
+    max-width:70%;
+    min-width: 300px;
+    margin:auto;
+  }
+  #order-info {
+    list-style:none;
+    margin-top: -10px;
+  }
+  #order-info-container {
+    display:grid;
+    background-color:#f7b05b;
+    justify-self: center;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  li {
+    margin:5px;
+  }
+  #order-text {
+    text-align: center;
+    margin-top: -15px;
+  }
+
+  /* Fresh Page Stuff */
+  #main-form {
+    width:300px;
+    margin: auto;
+    background-color: #f7b05b;
+    display:grid;
+    justify-content: center;
+    
+  }
+
+  #fresh-title {
+   text-align: center;
+  }
+
+  #specialty-drink-form {
+    background-color: #f7b05b;
+    width:1500px;
+    
+  }
+
+  form label {
+    display: block;
+    padding-top: 1rem;
+    
+  }
+
+  form fieldset, .package-info {
+  
+    border: 1px solid black;
+    border-radius: 10px; 
+    /* padding: .5rem 2%; */
+    width:100%;
+    max-width:26rem;
+    
+    
+  }
+  /* form legend {
+    color: #445ba9;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+  } */
+  
+  form label.top {
+    display: block;
+    padding-top: 1rem;
+    
+    /* font-size: .8rem; */
+  }
+  
+  form label.top input, form label.top select {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px black;
+    border-radius: 4px;
+    padding: .75rem;
+    color: black;
+    width: 80%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  form label.bottom {
+    display: block;
+    padding:.75rem 0;
+    color: black;
+  }
+  
+  form input.submitBtn {
+    border: none;
+    background-color: rgb(156, 44, 19);
+    color:white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 2rem 0 2rem 2%;
+    width: 80%;
+    max-width: 20rem;
+  }
+  
+  form input.submitBtn:hover{
+    background-color: rgb(138, 41, 19);
+  }
+  
+
+  select {
+    background-color: rgba(0,0,0, .2);
+    border: black;
+  }
+  
+  
+  form label.top input:required {
+    border-left: red solid 6px;
+  }
+  
+  form label.top input:required:valid {
+    border-left: green solid 6px;
+  }
+  
+  form label.top input:not([required]) {
+    border-left: rgb(8, 8, 8) solid 6px;
+  }
+  
+  form label.background{
+    margin-top:1rem;
+  }
+  textarea {
+    display: block;
+    background-color: rgba(0,0,0, .2);
+    padding: 10px;
+    max-width: 100%;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid black;
+
+  }
+
+  input::placeholder,
+textarea::placeholder,
+select::placeholder {
+  color: black; /* set the color of the placeholder text */
+}
+
+label.input[type="text"]:not(:focus),
+label.input[type="email"]:not(:focus),
+label.input[type="tel"]:not(:focus),
+textarea:not(:focus) {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Target all autofilled inputs */
+label.input:-webkit-autofill {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+}

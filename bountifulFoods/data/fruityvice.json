@@ -1,4 +1,6 @@
-{ "fruits":[{
+{ "fruits":[
+    {"name": "Select a fruit"},
+    {
     "genus": "Malus",
     "name": "Apple",
     "id": 6,

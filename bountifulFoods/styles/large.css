@@ -27,14 +27,14 @@
       #heading{
         font-size: 25px;
         height:70px;
-        
+        margin-right: 40px;
       }
       
       nav ul li {
         /* border: 1px solid black; */
         width: 35%;
         color: white;
-        height: 70px;
+        height: 62px;
         
       }
 
@@ -65,4 +65,18 @@
         color: white;
         
       }
+
+      #main-form {
+        width:900px;
+      }
+
+      #specialty-drink-form {
+        background-color: #f7b05b;
+        width:300px;
+        
+      }
+
+      #fresh-title {
+        text-align: right;
+       }
   }

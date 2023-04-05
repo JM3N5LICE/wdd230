@@ -7,4 +7,14 @@
         margin-top: 22px;
         
          }
+
+    #main-form {
+        width:500px;
+    }
+
+    #specialty-drink-form {
+        background-color: #f7b05b;
+        width:250px;
+        
+      }
 }
