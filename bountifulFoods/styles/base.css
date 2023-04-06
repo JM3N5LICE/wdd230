@@ -14,8 +14,20 @@ main {
 
 footer{
   background:#2f0084;
-  height: 100px;
   color: white;
+  
+}
+
+#footer-stuff{
+  display:flex;
+  text-align: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+a {
+  color: white;
+  
 }
 .navigation{
   grid-area: n;
@@ -103,59 +115,21 @@ footer{
     }
   }
 
-  /* .weather-card{
-    display:flex;
-    background-color: #f7b05b;
-  }
-
-  .forecast-container {
-    display: flex;
-  }
-  
-  .forecast-item {
-    flex-basis: 33%;
-  } */
-
-  #weather-card {
-    background-color: #f7b05b;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    /* max-width: 450px; */
-    /* height: 254px; */
-    justify-content: center;
-  }
-  .forecast-container {
-    display: flex;
-  justify-content: space-between;
-  flex-basis: 70%;
-  text-align: center;
-  margin-bottom:70px;
-  }
-  
-  .forecast-day {
-    /* flex-basis: 30%; */
-    margin:12px;
-    text-align: center;
-    background-color: #A9BCD0;
-    width:170px;
-    height: 230px;
-  }
-
-  .tdfheading {
-    text-align: center;
-    
-  }
+ 
   
   /* Order Confirmation Stuff */
   #orderConfirmationMain {
     max-width:70%;
     min-width: 300px;
     margin:auto;
+    background-color: #f7b05b;
+    
   }
   #order-info {
     list-style:none;
     margin-top: -10px;
+    padding:2rem;
+    border: 1px solid black;
   }
   #order-info-container {
     display:grid;
@@ -172,6 +146,13 @@ footer{
   #order-text {
     text-align: center;
     margin-top: -15px;
+    padding:2rem;
+    border: 1px solid black;
+  }
+
+  #ocheadtext {
+    padding:2rem;
+    border: 1px solid black;
   }
 
   /* Fresh Page Stuff */
@@ -181,7 +162,7 @@ footer{
     background-color: #f7b05b;
     display:grid;
     justify-content: center;
-    
+    padding: 1rem;
   }
 
   #fresh-title {
@@ -190,9 +171,12 @@ footer{
 
   #specialty-drink-form {
     background-color: #f7b05b;
-    width:1500px;
+    width:300px;
+    padding:1rem;
     
   }
+
+ 
 
   form label {
     display: block;
@@ -243,7 +227,7 @@ footer{
   
   form input.submitBtn {
     border: none;
-    background-color: rgb(156, 44, 19);
+    background-color: rgb(22, 96, 136);
     color:white;
     border-radius: 1rem;
     padding: .75rem 1.5rem;
@@ -253,7 +237,7 @@ footer{
   }
   
   form input.submitBtn:hover{
-    background-color: rgb(138, 41, 19);
+    background-color: #195270;
   }
   
 
@@ -307,6 +291,138 @@ label.input:-webkit-autofill {
   background-color: rgba(0, 0, 0, 0.2) !important;
 }
 
-.main-elements {
+
+#home-main {
+  display:grid;
+  margin:auto;
+  justify-content:center;
+  
+  grid-template-areas: "sd"
+                       "fijb"
+                       "do"
+                       "wc"
+                       "ca";
+ }
+
+ #specialty-drinks {
+  grid-area:sd;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ }
+
+ #weather-card {
+  grid-area:wc;
+ }
+
+ #drinks-ordered {
+  grid-area:do;
+ }
+
+ #fruit-image-join-banner {
+  grid-area:fijb;
+  text-align:center;
+  position:relative;
+  height: fit-content
+ }
+
+ #coastal-area {
+  grid-area:ca;
+ }
+
+ .main-elements {
   margin: 1rem;
+  padding: 1rem;
+  background-color: #f7b05b;
 }
+
+ .banner{
+  max-width: 100%;
+    height: auto;
+    width: auto\9; 
+ }
+
+ .specialDrinks{
+  max-width: 100%;
+    height: auto;
+    width: auto\9; 
+  
+ }
+
+ #drinks-ordered {
+  grid-area:do;
+  background-color: #f7b05b;
+  text-align: center;
+ }
+
+#drink-count {
+  font-size: 60px;
+}
+
+#inner-card {
+  background-color: #A9BCD0;
+  padding:1rem;
+}
+
+#hero-button{
+position:absolute;
+bottom:20px;
+right:25px;
+border: none;
+background-color: #166088;
+color:white;
+border-radius: 1rem;
+padding: .75rem 1.5rem;
+margin: 2rem 0 2rem 2%;
+width: 80%;
+max-width: 20rem;
+}
+
+.forecast-day{
+  text-align:center;
+  margin:1rem;
+  padding: 1rem;
+  background-color: #A9BCD0;
+}
+
+.forecast-days{
+  text-align: center;
+}
+
+#aboutUsMain {
+  background-color: #f7b05b;
+}
+
+#history{
+  text-align: center;
+}
+
+#map{
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+#list{
+  color:black;
+  text-align: center;
+}
+
+#list ul li a{
+  color:black;
+}
+/*
+<main>
+        <section id="history">
+          <h2>Our History</h2>
+          <p>Bountiful Foods was founded in 2010 by Jane and John Smith. They saw a need for fresh, locally sourced, organic produce in their community and decided to take matters into their own hands. Starting with a small storefront in Carlsbad, they quickly gained a following and expanded their business to include food trucks that cover the coastal area from Los Angeles to San Diego.</p>
+          <p>Today, Bountiful Foods continues to be owned and operated by the Smith family. They are proud to support local farmers and provide healthy food options to their community and tourists visiting the area.</p>
+        </section>
+        <section id="map">
+         
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13359.377214648485!2d-117.33403225!3d33.158093799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe46e0cc17d859193!2sBountiful%20Foods!5e0!3m2!1sen!2sus!4v1650858249127!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+      </main>
+*/

@@ -13,6 +13,7 @@
     <script src="./scripts/main.js" defer></script>
     <script src="./scripts/weather.js" defer></script>
     <script src="./scripts/lazy-load.js" defer></script>
+    <script src="./scripts/drinks-ordered.js" defer></script>
     
 </head>
 <body>
@@ -40,7 +41,7 @@
 <h1 id="heading"> Bountiful Foods</h1>
 <img id="image" src="./images/logo-100x100.png" alt="logo">
 </header>
-<main>
+<main id="home-main">
     <div id="specialty-drinks" class="main-elements">
         <picture>
             <img class="specialDrinks" src="./images/placeholder300x300.jpg" data-src="./images/specialty-drink-one300x300.jpg" alt="grizzly bear">
@@ -56,30 +57,46 @@
         <h2>Three Day Forecast</h2>
     </div>
     <div id="drinks-ordered" class="main-elements">
-        <!-- display the count of drinks ordered -->
-        <p>You have ordered <span id="drink-count">0</span> drinks.</p>
+        <div id="inner-card">
+            <!-- display the count of drinks ordered -->
+            <p>Specialty Drinks Submitted: </p>
+            <span id="drink-count">0</span> 
+        </div>
     </div>
     <div id="fruit-image-join-banner" class="main-elements">
         <picture>
             <img class="banner" src="./images/placeholder800x492.jpg" data-src="./images/banner-img800x492.jpg" alt="dusky mountains">
         </picture>
+        <button class="button-15" id="hero-button" onclick = "window.location.href='fresh.html';">Order Now!</button>
     </div>
     <div id="coastal-area" class="main-elements">
         <h2>Coastal Area</h2>
         <p>
             Carlsbad is a coastal city located in the North County region of San Diego County, California. 
 
-Carlsbad's coastal area is known for its beautiful beaches, including Carlsbad State Beach, which features a long stretch of sandy shorelines, beach volleyball courts, and a seaside boardwalk. Other popular beaches in the area include South Carlsbad State Beach and Terramar Beach. <br><br>
+            Carlsbad's coastal area is known for its beautiful beaches, including Carlsbad State Beach, which features a long stretch of sandy shorelines, beach volleyball courts, and a seaside boardwalk. Other popular beaches in the area include South Carlsbad State Beach and Terramar Beach. <br><br>
 
-The coastal area of Carlsbad is also home to several popular spots for birdwatching, hiking, and kayaking.
+            The coastal area of Carlsbad is also home to several popular spots for birdwatching, hiking, and kayaking.
 
-In addition to its natural beauty, Carlsbad's coastal area offers a range of recreational activities, including surfing, fishing, and boating. The area is also known for its world-class golf courses, including the Aviara Golf Club and the La Costa Resort and Spa.
+            In addition to its natural beauty, Carlsbad's coastal area offers a range of recreational activities, including surfing, fishing, and boating. The area is also known for its world-class golf courses, including the Aviara Golf Club and the La Costa Resort and Spa.
         </p>
     </div>
 </main>
 <footer>
-    <div>
-        <p>2907 State St, Carlsbad, CA 92008</p>
+    <div id="footer-stuff">
+        <div id="contact-info">
+            <h2>Contact Information</h2>
+            <p>Address: 123 Main St, Carlsbad, CA 92008</p>
+            <p>Phone: (555) 123-4567</p>
+            <p>Email: info@bountifulfoods.com</p>
+            <a href="acknowledgements.html">Acknowledgements</a>
+        </div>
+        <div id="social-media">
+            <h2>Social Media</h2>
+            <a href="https://www.facebook.com/"><img src="./images/facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/"><img src="./images/instagram.png" alt="Instagram"></a>
+            <a href="https://twitter.com/"><img src="./images/twitter.png" alt="Twitter"></a>
+        </div>
     </div>
 </footer>
 </body>

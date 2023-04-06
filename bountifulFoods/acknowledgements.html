@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bountiful Foods - Order Confirmation">
-    <title>Bountiful Foods - Order Confirmation</title>
+    <meta name="description" content="Bountiful Foods - About Us">
+    <title>Bountiful Foods - About Us</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/medium.css">
     <link rel="stylesheet" href="./styles/large.css">
     <script src="./scripts/main.js" defer></script>
-    <!-- <script src="./scripts/fresh.js" defer></script> -->
-    <script src="./scripts/orderConfirmation.js" defer></script>
+    
 </head>
 <body>
     <header>
@@ -29,7 +28,7 @@
                 <ul id="navbar">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="fresh.html">Fresh</a></li>
-                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="aboutUs.html" class="active">About Us</a></li>
                 </ul>
             </nav>
         </div>
@@ -39,27 +38,17 @@
         <h1 id="heading"> Bountiful Foods</h1>
         <img id="image" src="./images/logo-100x100.png" alt="logo">
     </header>
-    <main id="orderConfirmationMain">
-    <div id="order-info-container">
-        <h1 id="ocheadtext">Order Confirmation</h1>
-        <p id="order-text">Thank you for your order! <br>
-        Here is a summary of your order:</p>
-        <ul id="order-info">
-        <li>First name: <span id="first-name"></span></li>
-        <li>Email: <span id="email"></span></li>
-        <li>Phone: <span id="phone"></span></li>
-        <li>Fruit 1: <span id="fruit1"></span></li>
-        <li>Fruit 2: <span id="fruit2"></span></li>
-        <li>Fruit 3: <span id="fruit3"></span></li>
-        <li>Special instructions: <span id="special-instructions"></span></li>
-        <li>Carbohydrates: <span id="carbohydrates"></span> g</li>
-        <li>Protein: <span id="protein"></span> g</li>
-        <li>Fat: <span id="fat"></span> g</li>
-        <li>Calories: <span id="calories"></span></li>
-        <li>Sugar: <span id="sugar"></span> g</li>
-        <li>Order date: <span id="order-date"></span></li>
-        </ul>
-    </div>
+    <main>
+        <div id="list">
+            <p>Resources/Attribution:</p>
+            <ul>
+                <li><a href="https://openweathermap.org/api">OpenWeatherMap API</a></li>
+                <li><a href="https://unsplash.com/">Unsplash</a></li>
+                <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+                <li><a href="https://www.iconfinder.com/">Iconfinder</a></li>
+                <li><a href="https://www.logo.com/">logo</a></li>
+            </ul>
+        </div>
     </main>
     <footer>
         <div id="footer-stuff">
@@ -78,5 +67,6 @@
             </div>
         </div>
     </footer>
-</body>
-</html>
+    </body>
+    </html>
+    

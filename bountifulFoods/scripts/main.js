@@ -11,11 +11,8 @@ function openNav() {
 
 document.addEventListener("DOMContentLoaded", function() {
   var lastModified = new Date(document.lastModified);
-  var footer = document.querySelector("footer");
-  footer.innerHTML += "Last Modified: " + lastModified.toLocaleDateString();
+  var footerStuff = document.querySelector("#contact-info");
+  footerStuff.innerHTML += "<p>Last Modified: " + lastModified.toLocaleDateString() + "</p>";
 });
 
-let count = localStorage.getItem('drinkCount') || 0;
-  
-// update the drink count on the page
-document.getElementById('drink-count').textContent = count;
+

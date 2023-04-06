@@ -1,4 +1,4 @@
-@media screen and (min-width: 365px) {
+@media screen and (min-width: 565px) {
     #heading{
         grid-area: h;
         text-align: center;
@@ -17,4 +17,163 @@
         width:250px;
         
       }
+
+      #home-main {
+        display:grid;
+        margin:auto;
+        justify-content:center;
+        width: 80%;
+        grid-template-areas: "sd sd sd"
+                             "do fijb fijb"
+                             "wc wc wc"
+                             "ca ca ca";
+       }
+      
+       #specialty-drinks {
+        grid-area:sd;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+       }
+      
+       #weather-card {
+        grid-area:wc;
+       }
+      
+       #drinks-ordered {
+        grid-area:do;
+       }
+      
+       #fruit-image-join-banner {
+        grid-area:fijb;
+        text-align:center;
+        position:relative;
+        height: fit-content;
+        min-width: 365px;
+       }
+      
+       #coastal-area {
+        grid-area:ca;
+       }
+      
+       .main-elements {
+        margin: 1rem;
+        padding: 1rem;
+        background-color: #f7b05b;
+      }
+      
+       .banner{
+        max-width: 100%;
+          height: auto;
+          width: auto\9; 
+       }
+      
+       .specialDrinks{
+        max-width: 100%;
+          height: auto;
+          width: auto\9; 
+        
+       }
+      
+       #drinks-ordered {
+        grid-area:do;
+        background-color: #f7b05b;
+        text-align: center;
+       }
+      
+      #drink-count {
+        font-size: 60px;
+      }
+      
+      #inner-card {
+        background-color: #A9BCD0;
+        padding:1rem;
+        height:85%;
+      }
+      
+      #hero-button{
+      position:absolute;
+      bottom:20px;
+      right:25px;
+      border: none;
+      background-color: #166088;
+      color:white;
+      border-radius: 1rem;
+      padding: .75rem 1.5rem;
+      margin: 2rem 0 2rem 2%;
+      width: 80%;
+      max-width: 20rem;
+      }
+      
+      .forecast-day{
+        text-align:center;
+        margin:1rem;
+        padding: 1rem;
+        background-color: #A9BCD0;
+        min-width: 120px;
+      }
+      
+      .forecast-days{
+        text-align: center;
+      }
+
+      .forecast-container {
+        display: flex;
+      justify-content: space-between;
+      flex-basis: 70%;
+      text-align: center;
+      margin-bottom:70px;
+      }
+
+      #aboutUsMain {
+        background-color: #f7b05b;
+        width: 80%;
+        padding: 1.5rem;
+      }
+
+      #history{
+        text-align: center;
+        width: 50%;
+        margin:auto;
+      }
+      /*
+          <div id="weather-card" class="main-elements">
+              <h2>Three Day Forecast</h2>
+          </div>
+      
+          <div class="forecast-days">
+                    <h2 class="tdfheading">Three Day Forecast</h2><br> 
+                    <div class="forecast-container">${forecastMarkup}</div>
+                  </div>
+      
+          <div class="forecast-day">
+                        <h3>${dayOfWeek}</h3>
+                        <img src="${iconUrl}" alt="Weather Icon">
+                        <p> ${temperature} &deg;F</p>
+                        <p> ${condition}</p>
+                        <p> ${humidity}% humidity</p>
+                      </div>
+      
+          .forecast-container {
+              display: flex;
+            justify-content: space-between;
+            flex-basis: 70%;
+            text-align: center;
+            margin-bottom:70px;
+            }
+            
+            .forecast-day {
+            
+              margin:12px;
+              text-align: center;
+              background-color: #A9BCD0;
+              width:170px;
+              height: 230px;
+            }
+          
+            .tdfheading {
+              text-align: center;
+              
+            }
+      */
 }

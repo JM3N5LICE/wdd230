@@ -28,27 +28,10 @@ function getWeatherData() {
           const nextThreeDays = forecastData.list.filter((item) => {
             const itemDate = new Date(item.dt * 1000);
             const timeDifference = itemDate.getTime() - currentDate.getTime();
-            const dayDifference = Math.ceil(timeDifference / (1000 * 3600 * 24));
-            
-            return dayDifference >= 0 && dayDifference <= 3;
-          });
+            const dayDifference = Math.floor(timeDifference / (1000 * 3600 * 24));
           
-          if (nextThreeDays.length === 4) {
-            nextThreeDays.splice(0, 1); // remove the first item (current day)
-          } else if (nextThreeDays.length === 2) {
-            // Add the next day to get three days
-            const nextDay = forecastData.list.find((item) => {
-              const itemDate = new Date(item.dt * 1000);
-              const timeDifference = itemDate.getTime() - currentDate.getTime();
-              const dayDifference = Math.ceil(timeDifference / (1000 * 3600 * 24));
-              
-              return dayDifference === 1;
-            });
-            
-            if (nextDay) {
-              nextThreeDays.push(nextDay);
-            }
-          }
+            return dayDifference >= 0 && dayDifference < 3 && itemDate.getHours() === 15;
+          });
           
           // Get highest temperature, condition description, humidity, and icon for each day
           const highestTemperatures = {};
@@ -59,11 +42,10 @@ function getWeatherData() {
             const condition = item.weather[0].description;
             const humidity = item.main.humidity;
             const iconUrl = `https://openweathermap.org/img/w/${item.weather[0].icon}.png`;
-
-            const hour = itemDate.getHours();
+            
             const currentDay = highestTemperatures[dayOfWeek] || { temperature: -Infinity };
 
-            if (hour >= 12 && temperature > currentDay.temperature) {
+            if (temperature > currentDay.temperature) {
               highestTemperatures[dayOfWeek] = {
                 temperature,
                 condition,
@@ -74,7 +56,6 @@ function getWeatherData() {
           }
           
           // Render weather data
-          
           const forecastMarkup = Object.keys(highestTemperatures)
             .map((dayOfWeek) => {
               const { temperature, condition, humidity, iconUrl } = highestTemperatures[dayOfWeek];
