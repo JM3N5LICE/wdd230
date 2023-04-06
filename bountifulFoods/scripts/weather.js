@@ -28,9 +28,27 @@ function getWeatherData() {
           const nextThreeDays = forecastData.list.filter((item) => {
             const itemDate = new Date(item.dt * 1000);
             const timeDifference = itemDate.getTime() - currentDate.getTime();
-            const dayDifference = timeDifference / (1000 * 3600 * 24);
-            return dayDifference >= 0 && dayDifference <= 2;
+            const dayDifference = Math.ceil(timeDifference / (1000 * 3600 * 24));
+            
+            return dayDifference >= 0 && dayDifference <= 3;
           });
+          
+          if (nextThreeDays.length === 4) {
+            nextThreeDays.splice(0, 1); // remove the first item (current day)
+          } else if (nextThreeDays.length === 2) {
+            // Add the next day to get three days
+            const nextDay = forecastData.list.find((item) => {
+              const itemDate = new Date(item.dt * 1000);
+              const timeDifference = itemDate.getTime() - currentDate.getTime();
+              const dayDifference = Math.ceil(timeDifference / (1000 * 3600 * 24));
+              
+              return dayDifference === 1;
+            });
+            
+            if (nextDay) {
+              nextThreeDays.push(nextDay);
+            }
+          }
           
           // Get highest temperature, condition description, humidity, and icon for each day
           const highestTemperatures = {};
@@ -76,7 +94,7 @@ function getWeatherData() {
           const weatherCard = document.getElementById("weather-card");
           const weatherData = `
             <div class="forecast-days">
-              
+              <h2 class="tdfheading">Three Day Forecast</h2><br> 
               <div class="forecast-container">${forecastMarkup}</div>
             </div>
           `;

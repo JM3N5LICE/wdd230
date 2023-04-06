@@ -14,3 +14,8 @@ document.addEventListener("DOMContentLoaded", function() {
   var footer = document.querySelector("footer");
   footer.innerHTML += "Last Modified: " + lastModified.toLocaleDateString();
 });
+
+let count = localStorage.getItem('drinkCount') || 0;
+  
+// update the drink count on the page
+document.getElementById('drink-count').textContent = count;

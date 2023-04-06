@@ -9,6 +9,7 @@
 
 main {
   min-height: calc(800px);
+  margin:auto;
 }
 
 footer{
@@ -120,8 +121,8 @@ footer{
     display: flex;
     flex-direction: row;
     align-items: center;
-    max-width: 450px;
-    height: 254px;
+    /* max-width: 450px; */
+    /* height: 254px; */
     justify-content: center;
   }
   .forecast-container {
@@ -129,6 +130,7 @@ footer{
   justify-content: space-between;
   flex-basis: 70%;
   text-align: center;
+  margin-bottom:70px;
   }
   
   .forecast-day {
@@ -136,8 +138,13 @@ footer{
     margin:12px;
     text-align: center;
     background-color: #A9BCD0;
-    width:120px;
+    width:170px;
     height: 230px;
+  }
+
+  .tdfheading {
+    text-align: center;
+    
   }
   
   /* Order Confirmation Stuff */
@@ -298,4 +305,8 @@ textarea:not(:focus) {
 /* Target all autofilled inputs */
 label.input:-webkit-autofill {
   background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+.main-elements {
+  margin: 1rem;
 }

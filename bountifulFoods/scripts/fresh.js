@@ -48,6 +48,10 @@ form.addEventListener('submit', (event) => {
         sugar: nutritionInfo.sugar.toFixed(1)
       };
 
+      // update drink count in localStorage
+      const drinkCount = parseInt(localStorage.getItem('drinkCount')) || 0;
+      localStorage.setItem('drinkCount', drinkCount + 1);
+
       // navigate to order confirmation page
       const queryParams = new URLSearchParams({
         firstName: firstName,
@@ -68,3 +72,5 @@ form.addEventListener('submit', (event) => {
       window.location.href = `orderConfirmation.html?${queryParams.toString()}`;
     });
 });
+
+

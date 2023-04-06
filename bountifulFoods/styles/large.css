@@ -79,4 +79,89 @@
       #fresh-title {
         text-align: right;
        }
+
+       /* grid for large views */
+       main {
+        display:grid;
+        max-width: 70%;
+        margin:auto;
+        justify-content:center;
+        grid-template-areas: "sd sd sd "
+                             "do fijb fijb"
+                             "wc wc ca";
+       }
+
+       #specialty-drinks {
+        grid-area:sd;
+        background-color: #f7b05b;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-basis: 60%;
+        text-align: center;
+        height:280px;
+        
+       }
+
+       .specialDrinks {
+        max-width: 250px;
+        justify-items: center;
+        padding:2rem;
+        /*margin:2rem; */
+       }
+
+       #weather-card {
+        grid-area:wc;
+        background-color: #f7b05b;
+       }
+
+       #drinks-ordered {
+        grid-area:do;
+        background-color: #f7b05b;
+       }
+       #fruit-image-join-banner {
+        grid-area:fijb;
+        background-color: #f7b05b;
+       }
+
+       #coastal-area {
+        grid-area:ca;
+        background-color: #f7b05b;
+        padding:15px;
+        max-width: 460px;
+        min-width:200px;
+       }
+
+       #weather-card {
+        background-color: #f7b05b;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        min-width: 600px;
+        /* height: 254px; */
+        justify-content: center;
+      }
+      .forecast-container {
+        display: flex;
+      justify-content: space-between;
+      flex-basis: 70%;
+      text-align: center;
+      margin-bottom:70px;
+      }
+      
+      .forecast-day {
+        /* flex-basis: 30%; */
+        margin:12px;
+        text-align: center;
+        background-color: #A9BCD0;
+        width:170px;
+        height: 230px;
+      }
+    
+      .tdfheading {
+        text-align: center;
+        
+      }
   }
+
