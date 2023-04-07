@@ -395,6 +395,7 @@ max-width: 20rem;
 
 #history{
   text-align: center;
+  padding: 1rem;
 }
 
 #map{
@@ -412,6 +413,10 @@ ul {
 
 #list ul li a{
   color:black;
+}
+
+iframe {
+  width: 70%;
 }
 /*
 <main>
